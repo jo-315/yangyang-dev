@@ -11,7 +11,26 @@
 		<header id="masthead" class="site-header">
 			<?php get_template_part( 'template-parts/header', 'navigation' ); ?>
 			<div class="header-content">
-				header
+				<div class="header-content--img">
+					<div class="header-content--img-01-wrap">
+						<img
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang01.png"
+							class="header-content--img-01"
+						/>
+					</div>
+					<div class="header-content--img-desc">
+						やんやんとやんやん
+					</div>
+				</div>
+
+				<div class="header-content--article-wrap">
+					<div class="header-content--article-title">
+						Pick Up
+					</div>
+					<?php
+						echo do_shortcode('[smartslider3 slider=4]');
+					?>
+				</div>
 			</div>
 		</header>
 

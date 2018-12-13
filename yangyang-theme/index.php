@@ -2,31 +2,38 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<div class="content-area">
+		<div class="content-wrap">
 
-		<?php get_template_part( 'template-parts/content', 'navigation' ); ?>
+			<?php get_template_part( 'template-parts/content', 'navigation' ); ?>
 
-		<?php
-		if ( have_posts() ) :
+			<main id="main" class="site-main">
 
-			while ( have_posts() ) :
-				the_post();
+			<?php
+			if ( have_posts() ) :
 
-				get_template_part( 'template-parts/content', get_post_type() );
+				while ( have_posts() ) :
+					the_post();
 
-			endwhile;
+					get_template_part( 'template-parts/content', get_post_type() );
 
-			the_posts_navigation();
+				endwhile;
 
-		else :
+				the_posts_navigation();
 
-			get_template_part( 'template-parts/content', 'none' );
+			else :
 
-		endif;
-		?>
+				get_template_part( 'template-parts/content', 'none' );
 
-		</main><!-- #main -->
+			endif;
+			?>
+
+			</main><!-- #main -->
+
+			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+
+		</div>
+
 	</div><!-- #primary -->
 
 <?php
