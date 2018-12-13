@@ -10,6 +10,9 @@
 	<div id="page" class="site">
 		<header id="masthead" class="site-header">
 			<?php get_template_part( 'template-parts/header', 'navigation' ); ?>
+			<div class="header-content">
+				header
+			</div>
 		</header>
 
 		<div id="content" class="site-content">

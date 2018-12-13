@@ -979,7 +979,17 @@ object {
 	display: block;
 }
 
+/*--------------------------------------------------------------
+## Original
+--------------------------------------------------------------*/
+
+/* --- Common --- */
+.site-content {
+	background: #fffbf3;
+}
+
 /* --- Haeder --- */
+/* Header Nav */
 .header-top-wrap {
 	background: #686666;
 	position: fixed;
@@ -1010,4 +1020,10 @@ object {
 
 .header-nav-button {
 	display: none;
+}
+
+/* Haeder Content */
+.header-content {
+	width: 100%;
+	height: 460px;
 }

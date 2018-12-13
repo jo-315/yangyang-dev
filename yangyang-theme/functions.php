@@ -52,7 +52,6 @@ if ( ! function_exists( 'yangyang_theme_setup' ) ) :
 		 * to output valid HTML5.
 		 */
 		add_theme_support( 'html5', array(
-			'search-form',
 			'comment-form',
 			'comment-list',
 			'gallery',
@@ -158,4 +157,3 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
-
