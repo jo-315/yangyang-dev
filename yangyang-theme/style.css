@@ -982,10 +982,20 @@ object {
 /*--------------------------------------------------------------
 ## Original
 --------------------------------------------------------------*/
+/* --- fonts --- */
+@font-face {
+	font-family: 'smartUI';
+	src: url('./fonts/03SmartFontUI.ttf');
+}
 
 /* --- Common --- */
 .site-content {
 	background: #fffbf3;
+}
+
+.site-main {
+	width: 90%;
+	margin: auto;
 }
 
 /* --- Haeder --- */
@@ -1026,4 +1036,51 @@ object {
 .header-content {
 	width: 100%;
 	height: 460px;
+}
+
+/* --- Content --- */
+/* Navigation */
+.content-navigation-wrap {
+	border-top: solid 15px #706e6e;
+	overflow: auto;
+}
+
+.content-navigation {
+	margin: 0;
+	width: 100%;
+	padding: 0;
+}
+
+.content-navigation li {
+	float: left;
+  width: calc(100% / 8);
+	list-style: none;
+	text-align: center;
+	height: 45px;
+	font-family: 'smartUI';
+  font-size: 18px;
+	position: relative;
+	overflow: hidden;
+}
+
+.content-navigation :nth-child(2n-1){
+	background-color: rgba(226, 150, 150, 0.3);
+	border-top: solid 10px #e29696;
+}
+
+.content-navigation :nth-child(2n){
+	background-color: rgba(182, 207, 221, 0.3);
+	border-top: solid 10px #b6cfdd;
+}
+
+.content-navigation li a {
+	background-color: rgba(0, 0, 0, 0) !important;
+	border-top: none !important;
+	text-decoration: none;
+	color: #706e6e;
+	position: absolute;
+	top: 4px;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
