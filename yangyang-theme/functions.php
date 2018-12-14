@@ -157,3 +157,90 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * パンくず
+ */
+function breadcrumb(){
+ global $post;
+ $str = '';
+ $pNum = 2;
+ $str.= '<div class="breadcrumb clear">';
+ $str.= '<ul>';
+ $str.= '<li ><a href="'.home_url('/').'" class="home">HOME</a></li>';
+
+ /* 通常の投稿ページ  */
+ if(is_singular('post')){
+   $categories = get_the_category($post->ID);
+   $cat = $categories[0];
+
+   if($cat->parent != 0){
+     $ancestors = array_reverse(get_ancestors($cat->cat_ID, 'category'));
+     foreach($ancestors as $ancestor){
+       $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><a href="'. get_category_link($ancestor).'"><span>'.get_cat_name($ancestor).'</span></a></li>';
+     }
+   }
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><a href="'. get_category_link($cat-> term_id). '"><span>'.$cat->cat_name.'</span></a></li>';
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>'.$post->post_title.'</span></li>';
+ }
+
+ /* 固定ページ */
+ elseif(is_page()){
+   $pNum = 2;
+   if($post->post_parent != 0 ){
+     $ancestors = array_reverse(get_post_ancestors($post->ID));
+     foreach($ancestors as $ancestor){
+       $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><a href="'. get_permalink($ancestor).'"><span>'.get_the_title($ancestor).'</span></a></li>';
+     }
+   }
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>'. $post->post_title.'</span></li>';
+ }
+
+ /* カテゴリページ */
+ elseif(is_category()) {
+   $cat = get_queried_object();
+   $pNum = 2;
+   if($cat->parent != 0){
+     $ancestors = array_reverse(get_ancestors($cat->cat_ID, 'category'));
+     foreach($ancestors as $ancestor){
+       $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><a href="'. get_category_link($ancestor) .'"><span>'.get_cat_name($ancestor).'</span></a></li>';
+     }
+   }
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>'.$cat->name.'</span></li>';
+ }
+
+ /* タグページ */
+ elseif(is_tag()){
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>'. single_tag_title('', false). '</span></li>';
+ }
+
+ /* 投稿者ページ */
+ elseif(is_author()){
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>投稿者 : '.get_the_author_meta('display_name', get_query_var('author')).'</span></li>';
+ }
+
+ /* 404 Not Found ページ */
+ elseif(is_404()){
+   $str.= '<li><img src="'.get_stylesheet_directory_uri().'/img/breadcrumb.png"><span>お探しの記事は見つかりませんでした。</span></li>';
+ }
+
+ /* その他のページ */
+ else{
+   $str.= '<li><span>'.wp_title('', false).'</span></li>';
+ }
+ $str.= '</ul>';
+ $str.= '</div>';
+
+ echo $str;
+}
+
+// カテゴリーの表示
+function yangyang_category() {
+	$categories_list = get_the_category_list( ' ', '' );
+	if ( $categories_list ) {
+		printf(
+			'<div class="cat-links-wrap">%1$s</span>',
+			$categories_list
+		);
+	}
+}

@@ -44,13 +44,13 @@ get_header();
 
 				</div>
 
-			</main><!-- #main -->
+			</main>
 
 			<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
 
 		</div>
 
-	</div><!-- #primary -->
+	</div>
 
 <?php
 get_footer();

@@ -609,7 +609,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #00c1c4;
 }
 
 a:visited {
@@ -869,21 +869,6 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-/* Globally hidden elements when Infinite Scroll is supported and in use. */
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-	/* Theme Footer (when set to scrolling) */
-	display: none;
-}
-
-/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
-.infinity-end.neverending .site-footer {
-	display: block;
-}
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -1025,14 +1010,37 @@ object {
 
 .header-title-wrap {
 	float: left;
+	color: #e29696;
+	font-size: 30px;
+	font-family: 'smartUI';
+	letter-spacing: -5px;
+	padding: 5px;
 }
 
 .header-title {
 
 }
 
-.header-main-navigation-wrap {
+/* Main Navigation */
+.header-main-navigation {
 	float: right;
+	margin: 11px 20px;
+	font-size: 17px;
+}
+
+.header-main-navigation-items-wrap li {
+	list-style: none;
+	float: left;
+	margin: 0 19px;
+}
+
+.header-main-navigation-items-wrap li a {
+	color: #e29696;
+	text-decoration: none;
+}
+
+.header-main-navigation-items-wrap li:hover a {
+	color: #ffffff;
 }
 
 .header-nav-button {
@@ -1132,7 +1140,6 @@ object {
 .content-navigation-wrap {
 	border-top: solid 15px #706e6e;
 	overflow: auto;
-	margin: 0 0 70px;
 }
 
 .content-navigation {
@@ -1175,6 +1182,43 @@ object {
   height: 100%;
 }
 
+/* breadcrumb */
+.breadcrumb {
+	margin: 30px 0 70px;
+}
+
+.breadcrumb ul {
+	margin: 0;
+}
+
+.breadcrumb li {
+	list-style: none;
+	float: left;
+	margin-right: 20px;
+}
+
+.breadcrumb img {
+  width: 20px;
+	margin-right: 20px;
+}
+
+.breadcrumb a,
+.breadcrumb span {
+	display: inline-block;
+	font-family: 'smartUI';
+	font-size: 15px;
+  text-decoration: none;
+	color: #00c1c4;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.breadcrumb a:hover {
+	-webkit-transform: scale(1.1);
+  transform: scale(1.1);
+	opacity: 0.5;
+}
+
 /* Content Main */
 .site-main-title-wrap {
 	position: relative;
@@ -1183,6 +1227,7 @@ object {
 	border-bottom: dashed 5px #00c1c4;
 }
 
+/* title */
 .site-main-title {
 	position: absolute;
   font-size: 35px;
@@ -1204,7 +1249,6 @@ object {
 .site-main-articles-wrap {
 	margin: 40px 0;
 }
-
 
 /* --- Sidebar --- */
 .sidebar-wrap {
@@ -1314,12 +1358,133 @@ object {
 .posted_by {
 	width: 30%;
 	float: left;
+	position: relative;
+}
+
+.posted_by img {
+	height: 40px;
+	width: 40px;
+  margin-left: 5px;
+}
+
+.posted_by .byline {
+	position: absolute;
+	left: 55px;
+	top: 10px;
+	letter-spacing: -2px;
 }
 
 .posted_on {
 	width: 30%;
 	float: right;
+	margin-top: 10px;
 }
+
+/* Footer */
+.site-footer {
+	background: #fffbf3;
+}
+
+.footer-content {
+	overflow: auto;
+}
+
+/* img */
+.footer-img01-wrap {
+	width: 30%;
+	height: 280px;
+	float: left;
+	margin: 0 0 0 10%;
+	overflow: auto;
+	position: relative;
+}
+
+.footer-img01 {
+	position: absolute;
+	height: 250px;
+}
+
+.footer-img01--comment {
+	font-family: 'smartUI';
+	font-size: 17px;
+	position: absolute;
+	right: 0px;
+}
+
+.footer-img02-wrap {
+	width: 30%;
+	height: 310px;
+	float: right;
+	margin: 0 0 0 10%;
+}
+
+.footer-img02 {
+	height: 300px;
+}
+
+/* bottom */
+.footer-bottom {
+	background: #686666;
+	height: 40px;
+	padding: 10px;
+	color: #e29696;
+}
+
+/* --- Single --- */
+.single-content {
+ width: 90%;
+ margin: 0 auto;
+ font-size: 15px;
+ font-family: 'ヒラギノ角ゴ ProN W3'
+}
+
+.single-content h2 {
+}
+
+.single-content h3 {
+}
+
+/* Title */
+.single-title-wrap {
+	overflow: auto;
+	margin-bottom: 70px;
+}
+
+.single-title {
+	font-family: 'smartUI';
+}
+
+.single-category .cat-links-wrap {
+	text-align: center;
+  margin: 20px 0;
+}
+
+.single-category a {
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.single-category .posted_by {
+	position: relative;
+}
+
+.single-category .posted_by .byline {
+	position: absolute;
+	top: 15px;
+	left: 75px;
+}
+
+.single-category .posted_by img {
+	height: 60px;
+	width: 60px;
+}
+
+.single-category .posted_on {
+	text-align: right;
+  margin-top: 15px;
+}
+
+
 
 /* --- Plugin --- */
 /* smart slidar 3 */

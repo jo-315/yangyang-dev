@@ -34,12 +34,28 @@ if ( ! function_exists( 'yangyang_theme_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function yangyang_theme_posted_by() {
+		$path = get_stylesheet_directory_uri() .'/img/'. get_the_author_meta('user_nicename') . '.png';
 		$byline = (
 			'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
-			// '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
-		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+		echo '<img src="'. $path .'"><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+
+	}
+endif;
+
+if ( ! function_exists( 'yangyang_theme_posted_by_with_link' ) ) :
+	/**
+	 * Prints HTML with meta information for the current author.
+	 */
+	function yangyang_theme_posted_by_with_link() {
+		$author = get_the_author();
+		$path = get_stylesheet_directory_uri() .'/img/'. get_the_author_meta('user_nicename') . '.png';
+		$byline = (
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( $author ) . '</a></span>'
+		);
+
+		echo '<img src="'. $path .'"><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
 endif;

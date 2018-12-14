@@ -1,36 +1,30 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package yangyang
- */
-
-?>
-
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'yangyang-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'yangyang-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'yangyang-theme' ), 'yangyang-theme', '<a href="http://underscores.me/">yanyan</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer class="site-footer">
+		<div class="footer-content">
+			<div class="footer-img01-wrap">
+				<img
+					src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer01.png"
+					class="footer-img01"
+				/>
 
-<?php wp_footer(); ?>
+				<div class="footer-img01--comment">
+					TOPに行くんか？あぁん？
+				</div>
+			</div>
 
+			<div class="footer-img02-wrap">
+				<img
+					src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer02.png"
+					class="footer-img02"
+				/>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			やんやんとやんやん CopyRight?? 2019
+		</div>
+	</footer>
+</div>
 </body>
 </html>

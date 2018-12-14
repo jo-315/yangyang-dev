@@ -5,8 +5,5 @@
 		</div>
 	</div>
 	<div class="sidebar-content recommend-article">
-		<div class="sidebar-title">
-			<?php dynamic_sidebar( 'sidebar-2' ); ?>
-		</div>
 	</div>
 </aside>

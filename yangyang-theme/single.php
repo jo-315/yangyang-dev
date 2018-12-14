@@ -2,22 +2,34 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
+<div class="content-area">
+	<div class="content-wrap">
+
+		<?php get_template_part( 'template-parts/content', 'navigation' ); ?>
+
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+			<div class="site-main-articles-wrap">
 
-			get_template_part( 'template-parts/content-single', get_post_type() );
+				<?php
+				while ( have_posts() ) :
+					the_post();
 
-			the_post_navigation();
+					get_template_part( 'template-parts/content-single', get_post_type() );
 
-		endwhile; // End of the loop.
-		?>
+					the_post_navigation();
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				endwhile;
+				?>
+
+			</div>
+
+		</main>
+
+		<?php get_template_part( 'template-parts/content', 'sidebar' ); ?>
+
+	</div>
+</div>
 
 <?php
 get_footer();
