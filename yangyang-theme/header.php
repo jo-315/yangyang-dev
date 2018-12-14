@@ -19,7 +19,9 @@
 						/>
 					</div>
 					<div class="header-content--img-desc">
-						<span>やんやんと</span></br>　　　　<span>やんやん</span>
+						<div class="header-content--img-desc-content">
+							<span>やんやんと</span></br><span>やんやん</span>
+						</div>
 					</div>
 					<div class="header-content--img-02-wrap">
 						<img

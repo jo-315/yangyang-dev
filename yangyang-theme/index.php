@@ -9,28 +9,40 @@ get_header();
 
 			<main id="main" class="site-main">
 
-				<div class="site-main-title">
-          新着記事					
+				<div class="site-main-title-wrap">
+					<div class="site-main-title">
+	          新着記事
+					</div>
+					<div class="site-main-title--img-wrap">
+						<img
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/index-article-title.png"
+							class="site-main-title--img"
+						/>
+					</div>
 				</div>
 
-				<?php
-				if ( have_posts() ) :
+				<div class="site-main-articles-wrap">
 
-					while ( have_posts() ) :
-						the_post();
+					<?php
+					if ( have_posts() ) :
 
-						get_template_part( 'template-parts/content', get_post_type() );
+						while ( have_posts() ) :
+							the_post();
 
-					endwhile;
+							get_template_part( 'template-parts/content', get_post_type() );
 
-					the_posts_navigation();
+						endwhile;
 
-				else :
+						the_posts_navigation();
 
-					get_template_part( 'template-parts/content', 'none' );
+					else :
 
-				endif;
-				?>
+						get_template_part( 'template-parts/content', 'none' );
+
+					endif;
+					?>
+
+				</div>
 
 			</main><!-- #main -->
 
