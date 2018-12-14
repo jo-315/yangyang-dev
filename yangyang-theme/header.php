@@ -19,7 +19,13 @@
 						/>
 					</div>
 					<div class="header-content--img-desc">
-						やんやんとやんやん
+						<span>やんやんと</span></br>　　　　<span>やんやん</span>
+					</div>
+					<div class="header-content--img-02-wrap">
+						<img
+							src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang02.png"
+							class="header-content--img-02"
+						/>
 					</div>
 				</div>
 

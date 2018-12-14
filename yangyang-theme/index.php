@@ -9,24 +9,28 @@ get_header();
 
 			<main id="main" class="site-main">
 
-			<?php
-			if ( have_posts() ) :
+				<div class="site-main-title">
+          新着記事					
+				</div>
 
-				while ( have_posts() ) :
-					the_post();
+				<?php
+				if ( have_posts() ) :
 
-					get_template_part( 'template-parts/content', get_post_type() );
+					while ( have_posts() ) :
+						the_post();
 
-				endwhile;
+						get_template_part( 'template-parts/content', get_post_type() );
 
-				the_posts_navigation();
+					endwhile;
 
-			else :
+					the_posts_navigation();
 
-				get_template_part( 'template-parts/content', 'none' );
+				else :
 
-			endif;
-			?>
+					get_template_part( 'template-parts/content', 'none' );
+
+				endif;
+				?>
 
 			</main><!-- #main -->
 
