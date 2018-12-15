@@ -36,17 +36,13 @@
 						$cat_id   = $category[0]->cat_ID;
 					?>
 
-			 		<li>
-			 			<a href="<?php the_permalink(); ?>" class="article-link">
+			 		<li class="article-wrap article-wrap-<?php echo $cat_id?>">
+			 			<a href="<?php the_permalink(); ?>" class="article-link sidebar-link">
 							<div class="sidebar-img">
 								<?php yangyang_theme_post_thumbnail(); ?>
 							</div>
 
 			 				<div class="sidebar-desc">
-
-								<div class="sidebar-item-category-<?php echo $cat_id ?>">
-				 					<?php echo $cat_name ?>
-				 				</div>
 
 			 					<div class="sidebar-item-title">
 			 						<?php the_title( '<span>', '</span>' ); ?>
@@ -55,8 +51,7 @@
 	 							<div class="sidebar-desc-author">
 	 								<?php yangyang_theme_posted_by(); ?>
 	 							</div>
-
-			 				</div>
+							</div>
 			 			</a>
 			 		</li>
 				<?php
