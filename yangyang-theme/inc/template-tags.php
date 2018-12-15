@@ -135,13 +135,13 @@ if ( ! function_exists( 'yangyang_theme_post_thumbnail' ) ) :
 		if ( is_singular() ) :
 			?>
 
-			<div class="post-thumbnail">
+			<div class="article-thumbnail">
 				<?php the_post_thumbnail(); ?>
-			</div><!-- .post-thumbnail -->
+			</div>
 
 		<?php else : ?>
 
-      <div class="article-thumbnail">
+      <div class="index-article-thumbnail article-thumbnail">
 				<?php
 				the_post_thumbnail( 'post-thumbnail', array(
 					'alt' => the_title_attribute( array(

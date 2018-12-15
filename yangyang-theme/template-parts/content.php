@@ -3,7 +3,7 @@
 	$cat_name = $category[0]->cat_name;
 	$cat_id   = $category[0]->cat_ID;
 ?>
-<div class="article-wrap article-wrap-<?php echo $cat_id?>">
+<div class="content-article-wrap article-wrap article-wrap-<?php echo $cat_id?>">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>" class="article-link">
 		<div class="article-category article-category-<?php echo $cat_id?>">
@@ -30,11 +30,11 @@
 
 				<?php if ( 'post' === get_post_type() ) : ?>
 
-					<div class="posted_by">
+					<div class="posted_by content-posted_by">
 						<?php yangyang_theme_posted_by(); ?>
 					</div>
 
-					<div class="posted_on">
+					<div class="posted_on content-posted_on">
 						<?php yangyang_theme_posted_on(); ?>
 					</div>
 

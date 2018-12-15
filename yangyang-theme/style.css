@@ -475,10 +475,6 @@ hr {
 	margin-bottom: 1.5em;
 }
 
-ul, ol {
-	margin: 0 0 1.5em 3em;
-}
-
 ul {
 	list-style: disc;
 }
@@ -1125,6 +1121,10 @@ object {
 }
 
 /* --- Content --- */
+.site-main-wrap {
+	overflow: auto;
+}
+
 .site-main {
   width: 70%;
 	float: left;
@@ -1261,8 +1261,65 @@ object {
 }
 
 .sidebar-title {
-	font-size: 20px;
+	font-size: 25px;
 	font-family: 'smartUI';
+	padding: 10px 0 0 10px;
+	border-bottom: dashed 5px #00c1c4;
+}
+
+.sidebar-content ul {
+	padding: 0;
+}
+
+.sidebar-content li {
+	list-style: none;
+	position: relative;
+  height: 150px;
+}
+
+/* Img */
+.sidebar-img {
+	position: absolute;
+  height: 100px;
+	width: 140px;
+}
+
+.sidebar-article-thumbnail{
+  height: 100%;
+	width: 100%;
+}
+
+.sidebar-img img{
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* desc */
+.sidebar-desc {
+  position: absolute;
+	left: 150px;
+}
+
+.sidebar-item-category-5 {
+	border-bottom: solid 2px #a6d1ba;
+}
+
+.sidebar-item-category-3 {
+	border-bottom: solid 2px #e29696;
+}
+
+.sidebar-item-title {
+	position: absolute;
+}
+
+.sidebar-desc-author {
+	position: absolute;
+	bottom: 0;
+}
+.sidebar-desc img {
+	height: 20px;
+	width: 20px;
 }
 
 /* Popular */
@@ -1276,107 +1333,47 @@ object {
 }
 
 /* --- Content.php --- */
-.article-wrap {
+.content-article-wrap {
   width: 45%;
 	height: 350px;
 	float: left;
 	margin: 0 5% 40px 0;
+	padding-right: 5%;
 }
 
-.article-wrap article {
+.content-article-wrap article {
 	position: relative;
 }
 
-.article-link {
-	width: 100%;
-	height: 100%;
-	text-decoration: none;
-	color: #000000;
-	font-family: 'smartUI';
-}
-
-/* Category */
-.article-category {
-	position: absolute;
-	width: 250px;
-	font-size: 14px;
-  padding: 5px 5px 0 5px;
-	text-align: center;
-	color: #ffffff;
-	top: -10px;
-	left: -10px;
-}
-
 /* thumbnail */
-.article-thumbnail {
-	width: 90%;
+.index-article-thumbnail {
 	height: 200px;
 	overflow: hidden;
 }
 
-.article-wrap img {
+.content-article-wrap img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-/* hover */
-.article-wrap:hover article {
-	overflow: hidden;
-}
-
-.article-wrap:hover .article-category {
-	display: none;
-}
-
-.article-wrap-3:hover .article-link {
-	color: #e29696;
-}
-
-.article-category-3,
-.article-wrap-3:hover .article-thumbnail {
-	background: #e29696;
-}
-
-.article-wrap-5:hover .article-link {
-	color: #a6d1ba;
-}
-
-.article-category-5,
-.article-wrap-5:hover .article-thumbnail {
-	background: #a6d1ba;
-}
-
-
-.article-wrap:hover img {
-	transform: scale(1.1);
-	transition-duration: 0.1s;
-	opacity: 0.6;
-}
-
 /* Meta */
-.posted_by {
+.content-posted_by {
 	width: 30%;
-	float: left;
-	position: relative;
 }
 
-.posted_by img {
+.content-posted_by img {
 	height: 40px;
 	width: 40px;
-  margin-left: 5px;
 }
 
-.posted_by .byline {
-	position: absolute;
+.content-posted_by .byline {
 	left: 55px;
 	top: 10px;
-	letter-spacing: -2px;
 }
 
-.posted_on {
+.content-posted_on {
 	width: 30%;
-	float: right;
 	margin-top: 10px;
 }
 
@@ -1431,6 +1428,10 @@ object {
 }
 
 /* --- Single --- */
+.single-show-article {
+	background: #fffbf3;
+}
+
 .single-content {
  width: 90%;
  margin: 0 auto;
@@ -1438,13 +1439,22 @@ object {
  font-family: 'ヒラギノ角ゴ ProN W3'
 }
 
-.single-content h2 {
+.single-content-posted_by .byline {
+	top: 15px;
+  left: 60px;
 }
 
-.single-content h3 {
+.single-content-main {
+  margin-bottom: 80px;
 }
 
-/* Title */
+.single-content-main h2 {
+}
+
+.single-content-main h3 {
+}
+
+/* Header */
 .single-title-wrap {
 	overflow: auto;
 	margin-bottom: 70px;
@@ -1464,26 +1474,162 @@ object {
 	font-size: 17px;
 }
 
-.single-category .posted_by {
+.single-content-posted_by {
+	width: 150px;
+}
+
+.single-content-posted_by img {
+	width: 50px;
+	height: 50px;
+}
+
+.single-content-posted_on {
+	margin-top: 15px;
+}
+
+/* 関連記事・人気記事*/
+.single-posted_by {
+	width: 150px;
+}
+
+.single-posted_by .byline {
+	top: 10px;
+	left: 55px;
+}
+
+.single-posted_by img {
+	height: 40px;
+	width: 40px;
+}
+
+.single-posted_on {
+  margin-top: 10px;
+}
+
+/* Related Post */
+.related-post-wrap,
+.single--popular-post-wrap  {
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.related-post-title,
+.single--popular-post-title {
+	font-size: 30px;
+	font-family: 'smartUI';
+	border-bottom: dashed 5px #00c1c4;
+  padding: 3px 20px;
+	margin-bottom: 30px;
+}
+
+.related-post-content {
+  padding: 0;
+}
+
+.related-post-content li {
+	float: left;
+  list-style: none;
+	width: calc(100%/4);
+	padding: 0 20px;
+	margin: 0;
+	height: auto;
 	position: relative;
 }
 
-.single-category .posted_by .byline {
+.related-post-title-wrap {
+	margin: 5px 0;
+}
+
+.single-category {
+	top: -5px;
+	left: 5px;
+}
+
+/* Popular */
+.single--popular-post-wrap {
+	margin-top: 30px;
+}
+
+/* --- 記事一覧 --- */
+.article-category {
 	position: absolute;
-	top: 15px;
-	left: 75px;
+	width: 250px;
+	font-size: 14px;
+  padding: 5px 5px 0 5px;
+	text-align: center;
+	color: #ffffff;
+	top: -10px;
+	left: -10px;
 }
 
-.single-category .posted_by img {
-	height: 60px;
-	width: 60px;
+.article-link {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #000000;
+	font-family: 'smartUI';
 }
 
-.single-category .posted_on {
+/* 横並び */
+.posted_by {
+	float: left;
+	position: relative;
+}
+
+.posted_by img {
+  margin-left: 5px;
+}
+
+.posted_by .byline {
+	position: absolute;
+	letter-spacing: -2px;
+}
+
+.posted_on {
+	float: right;
 	text-align: right;
-  margin-top: 15px;
 }
 
+/* 縦並び */
+/* hover */
+.article-wrap:hover article,
+.article-wrap:hover div {
+	overflow: hidden;
+}
+
+.article-wrap:hover .article-category {
+	display: none;
+}
+
+.article-wrap:hover img {
+	transform: scale(1.1);
+	transition-duration: 0.1s;
+	opacity: 0.6;
+}
+
+/* カテゴリーごとの設定  */
+/* 横並び */
+/* 縦並び */
+
+/* hover */
+.article-wrap-3:hover .article-link {
+	color: #e29696;
+}
+
+.article-category-3,
+.article-wrap-3:hover .article-thumbnail {
+	background: #e29696;
+}
+
+.article-wrap-5:hover .article-link {
+	color: #a6d1ba;
+}
+
+.article-category-5,
+.article-wrap-5:hover .article-thumbnail {
+	background: #a6d1ba;
+}
 
 
 /* --- Plugin --- */
