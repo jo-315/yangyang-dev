@@ -1020,7 +1020,7 @@ object {
 /* Main Navigation */
 .header-main-navigation {
 	float: right;
-	margin: 11px 20px;
+	margin: -3px 20px 0;
 	font-size: 17px;
 }
 
@@ -1247,7 +1247,7 @@ object {
 }
 
 .site-main-articles-wrap {
-	margin: 0 0 40px;
+	margin: 35px 0 40px;
 }
 
 /* --- Sidebar --- */
@@ -1572,6 +1572,17 @@ object {
 	left: 5px;
 }
 
+/* Archive */
+.category-page-title {
+	font-size: 35px;
+  font-family: 'smartUI';
+	height: 55px;
+	margin: 0;
+}
+
+.archive-main-title-wrap {
+	width: 90%;
+}
 /* Popular */
 .single--popular-post-wrap {
 	margin-top: 30px;
