@@ -19,9 +19,9 @@ if ( ! function_exists( 'yangyang_theme_posted_on' ) ) :
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( DATE_W3C ) ),
-			esc_html( get_the_date() ),
+			esc_html( get_the_date('Y年 F d日') ),
 			esc_attr( get_the_modified_date( DATE_W3C ) ),
-			esc_html( get_the_modified_date() )
+			esc_html( get_the_modified_date('Y年 F d日') )
 		);
 
 		echo '<span class="posted-on">' . $time_string . '</span>'; // WPCS: XSS OK.
