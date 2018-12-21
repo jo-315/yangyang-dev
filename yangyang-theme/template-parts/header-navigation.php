@@ -34,6 +34,11 @@
           ABOUT
         </a>
       </li>
+      <li>
+        <a href="/contact-us">
+          CONTACT US
+        </a>
+      </li>
     </ul>
   </nav>
 

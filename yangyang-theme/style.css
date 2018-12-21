@@ -519,8 +519,7 @@ table {
 --------------------------------------------------------------*/
 button,
 input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type="reset"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
@@ -1673,4 +1672,31 @@ object {
 /* smart slidar 3 */
 div #n2-ss-4 .n2-style-1101-heading {
 	background: #00c1c4 !important;
+}
+
+/* --- Contact Us--- */
+div.wpcf7 {
+	width: 650px;
+	margin: 80px auto;
+	text-align: center;
+  font-family: 'smartUI';
+}
+
+div.wpcf7 input {
+	width: 100%;
+}
+
+.wpcf7-submit {
+	width: 200px !important;
+	height: 40px;
+	border: none;
+	background: #00c1c4;
+	font-weight: bold;
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 20px
+}
+
+.wpcf7-submit:hover {
+	opacity: 0.6;
 }
