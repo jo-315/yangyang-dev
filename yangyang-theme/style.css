@@ -1275,6 +1275,7 @@ object {
 	position: relative;
   height: 100px;
 	margin-bottom: 15px;
+	margin-left: 5px;
 }
 
 .sidebar-content .article-wrap:hover div {
@@ -1699,4 +1700,67 @@ div.wpcf7 input {
 
 .wpcf7-submit:hover {
 	opacity: 0.6;
+}
+
+/* Pagination */
+.nav-links {
+	text-align: center;
+	font-size: 16px;
+}
+
+.nav-links .current {
+	font-size: 18px;
+}
+
+.nav-links a {
+	text-decoration: none;
+}
+
+.nav-links a,
+.nav-links span {
+	margin: 0 3px;
+}
+
+/* Share button */
+.snsShareArea {
+	margin: 0 auto 40px;
+	width: 92%;
+}
+
+.snsShareArea:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.snsShareArea a{
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	width: 31.3%;
+	margin: 1%;
+	padding: .7em 0;
+	border-radius: 3px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+
+.snsShareArea a:hover{
+	opacity: 0.5;
+}
+
+.btn--twitter{
+	background: #55acee;
+}
+
+.btn--facebook{
+	background: #3b5998;
+}
+
+.btn--line{
+	background: #54bc4d;
 }

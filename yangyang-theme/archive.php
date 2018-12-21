@@ -35,7 +35,12 @@ get_header();
 
 					endwhile;
 
-					the_posts_pagination();
+					the_posts_pagination(array(
+						'mid_size' => 2,
+						'prev_text' => '&lt;',
+						'next_text' => '&gt;',
+						'screen_reader_text' => 'ページネーション'
+					));
 
 				else :
 
