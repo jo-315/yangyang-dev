@@ -1986,6 +1986,26 @@ object {
 	left: 5px;
 }
 
+@media screen and (max-width: 1192px) {
+	.related-post-content li {
+		width: calc(100% / 2);
+		padding: 0 50px;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.related-post-content li {
+		padding: 0 20px;
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.related-post-content li {
+		width: 100%;
+	}
+}
+
 /* Archive */
 .category-page-title {
 	font-size: 35px;
@@ -1997,6 +2017,7 @@ object {
 .archive-main-title-wrap {
 	width: 90%;
 }
+
 /* Popular */
 .single--popular-post-wrap {
 	margin-top: 30px;
@@ -2020,6 +2041,20 @@ object {
 	text-decoration: none;
 	color: #000000;
 	font-family: 'smartUI';
+}
+
+.article-thumbnail img {
+	height: 180px;
+	object-fit: cover;
+}
+@media screen and (max-width: 1192px) {
+	.article-thumbnail {
+		text-align: center;
+	}
+
+	.article-thumbnail img {
+		width: 100%;
+	}
 }
 
 /* 横並び */

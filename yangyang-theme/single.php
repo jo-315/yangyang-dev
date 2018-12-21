@@ -93,7 +93,7 @@ get_header();
 						<?php echo $related_cat_name ?>
 					</div>
 
-					<div class="article-thumbnail-wrap">
+					<div class="article-thumbnail-wrap single-post-thumbnail">
 						<?php yangyang_theme_post_thumbnail(); ?>
 					</div>
 
@@ -165,7 +165,7 @@ get_header();
 		 					<?php echo $cat_name ?>
 		 				</div>
 
-		 				<div class="article-thumbnail-wrap">
+		 				<div class="article-thumbnail-wrap single-post-thumbnail">
 		 					<?php yangyang_theme_post_thumbnail(); ?>
 		 				</div>
 
