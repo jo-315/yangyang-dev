@@ -36,7 +36,7 @@
 						Pick Up
 					</div>
 					<?php
-						echo do_shortcode('[smartslider3 slider=4]');
+						get_template_part( 'template-parts/header', 'slider' );
 					?>
 				</div>
 			</div>

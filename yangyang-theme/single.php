@@ -127,10 +127,10 @@ get_header();
 		</ul>
 	</div>
 
-	<!-- 人気記事 -->
+	<!-- アクセスランキング -->
 	<div class="single--popular-post-wrap">
 		<div class="single--popular-post-title">
-			人気記事
+			アクセスランキング
 		</div>
 
 		<ul class="related-post-content">

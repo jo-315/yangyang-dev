@@ -1,9 +1,9 @@
 <aside class="sidebar-wrap">
 
-	<!-- 人気記事 -->
+	<!-- アクセスランキング -->
 	<div class="sidebar-content popular-article">
 		<div class="sidebar-title">
-			人気記事
+			アクセスランキング
 			<!-- <img
 				src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-jo.png"
 				class="header-logo"
