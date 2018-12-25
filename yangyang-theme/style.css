@@ -377,7 +377,7 @@ textarea {
 	color: #404040;
 	font-family: sans-serif;
 	font-size: 14px;
-	line-height: 1.5;
+	line-height: 1.9;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -385,7 +385,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-	margin-bottom: 1.5em;
+	margin-bottom: 8px;
+	margin-top: 24px;
 }
 
 dfn, cite, em, i {
@@ -579,7 +580,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: #00c1c4;
+	color: #e27676;
 }
 
 a:visited {
@@ -1197,7 +1198,7 @@ object {
 .header-content--img-desc-content span:before {
 	position: absolute;
 	content: "";
-	border-bottom: solid 4px #00c1c4;
+	border-bottom: solid 4px #e27676;
 	width: 220px;
 	bottom: 0;
 	left: 40px;
@@ -1455,7 +1456,7 @@ object {
 
 .slides-nav a.active {
 	cursor: default;
-	background: #00c1c4;
+	background: #e27676;
 }
 
 @media (max-width: 1052px) {
@@ -1593,7 +1594,7 @@ object {
 	font-family: 'smartUI';
 	font-size: 15px;
   text-decoration: none;
-	color: #00c1c4;
+	color: #e27676;
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
@@ -1609,7 +1610,7 @@ object {
 	position: relative;
 	width: 215px;
 	height: 55px;
-	border-bottom: dashed 5px #00c1c4;
+	border-bottom: dashed 5px #e27676;
 }
 
 /* title */
@@ -1649,7 +1650,6 @@ object {
 	font-size: 25px;
 	font-family: 'smartUI';
 	padding: 10px 0 0 10px;
-	border-bottom: dashed 5px #00c1c4;
 }
 
 .sidebar-content ul {
@@ -1958,7 +1958,7 @@ object {
 .single--popular-post-title {
 	font-size: 30px;
 	font-family: 'smartUI';
-	border-bottom: dashed 5px #00c1c4;
+	border-bottom: dashed 5px #e27676;
   padding: 3px 20px;
 	margin-bottom: 30px;
 }
@@ -2121,7 +2121,7 @@ object {
 /* --- Plugin --- */
 /* smart slidar 3 */
 div #n2-ss-4 .n2-style-1101-heading {
-	background: #00c1c4 !important;
+	background: #e27676 !important;
 }
 
 /* --- Contact Us--- */
@@ -2140,7 +2140,7 @@ div.wpcf7 input {
 	width: 200px !important;
 	height: 40px;
 	border: none;
-	background: #00c1c4;
+	background: #e27676;
 	font-weight: bold;
 	color: #ffffff;
 	border-radius: 3px;
