@@ -1,43 +1,33 @@
 <div class="content-navigation-wrap">
   <ul class="content-navigation">
     <li>
-      <a href="/">
-        食べ物
+      <a href="/category/trip">
+        Trip
       </a>
     </li>
     <li>
-      <a href="/">
-        旅行
+      <a href="/category/academic">
+        Academic
       </a>
     </li>
     <li>
-      <a href="/">
-        旅行
+      <a href="/category/skill">
+        Skill
       </a>
     </li>
     <li>
-      <a href="/">
-        旅行
+      <a href="/category/thought">
+        Thought
       </a>
     </li>
     <li>
-      <a href="/">
-        旅行
+      <a href="/category/lifestyle">
+        Lifestyle
       </a>
     </li>
     <li>
-      <a href="/">
-        旅行
-      </a>
-    </li>
-    <li>
-      <a href="/">
-        旅行
-      </a>
-    </li>
-    <li>
-      <a href="/">
-        旅行
+      <a href="/category/tweet">
+        Tweet
       </a>
     </li>
   </ul>

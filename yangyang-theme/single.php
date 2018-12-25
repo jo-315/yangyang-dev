@@ -87,9 +87,9 @@ get_header();
 				while($query->have_posts()):$query->the_post();
 			?>
 
-			<li class="article-wrap article-wrap-<?php echo $related_cat_id?>">
+			<li class="article-wrap article-wrap-<?php echo $related_cat_name?>">
 				<a href="<?php the_permalink(); ?>" class="article-link">
-					<div class="article-category article-category-<?php echo $related_cat_id?> single-category">
+					<div class="article-category article-category-<?php echo $related_cat_name?> single-category">
 						<?php echo $related_cat_name ?>
 					</div>
 

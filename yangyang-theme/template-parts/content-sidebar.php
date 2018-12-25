@@ -33,10 +33,9 @@
 					<?php
 						$category = get_the_category();
 						$cat_name = $category[0]->cat_name;
-						$cat_id   = $category[0]->cat_ID;
 					?>
 
-			 		<li class="article-wrap article-wrap-<?php echo $cat_id?>">
+			 		<li class="article-wrap article-wrap-<?php echo $cat_name?>">
 			 			<a href="<?php the_permalink(); ?>" class="article-link sidebar-link">
 							<div class="sidebar-img">
 								<?php yangyang_theme_post_thumbnail(); ?>
