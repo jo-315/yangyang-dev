@@ -4,7 +4,7 @@
       <?php $args = array(
       'posts_per_page' => 4,
       'order' => 'DESC',
-      'post__in' => array( '45', '43', '41', '39' )
+      'post__in' => array( '98', '109', '112' )
         );
         $my_query = new WP_Query( $args );?>
         <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>

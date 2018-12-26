@@ -1838,24 +1838,22 @@ object {
 
 /* img */
 .footer-img01-wrap {
-	width: 30%;
-	height: 280px;
-	float: left;
-	margin: 0 0 0 10%;
-	overflow: auto;
+	width: 120px;
+	height: 150px;
+	margin: 30px auto;
 	position: relative;
 }
 
 .footer-img01 {
 	position: absolute;
-	height: 250px;
+	height: 150px;
 }
 
 .footer-img01--comment {
 	font-family: 'smartUI';
-	font-size: 17px;
+	font-size: 14px;
 	position: absolute;
-	right: 0px;
+	left: -80px;
 }
 
 .footer-img02-wrap {
@@ -1867,6 +1865,24 @@ object {
 
 .footer-img02 {
 	height: 300px;
+}
+
+/* footer-nav */
+.footer-nav ul {
+	overflow: auto;
+	width: 80%;
+	margin: 0 auto 30px;
+}
+
+.footer-nav li {
+	list-style: none;
+	float: left;
+	width: calc(100% / 4)
+}
+
+.footer-nav li a {
+	text-decoration: none;
+	font-size: 17px;
 }
 
 /* bottom */

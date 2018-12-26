@@ -9,20 +9,43 @@
 				/>
 
 				<div class="footer-img01--comment">
-					TOPに行くんか？あぁん？
+					どのページに行きたいんや？
 				</div>
-			</div>
-
-			<div class="footer-img02-wrap">
-				<img
-					src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer02.png"
-					class="footer-img02"
-				/>
 			</div>
 		</div>
 
+		<div class="footer-nav">
+			<ul>
+				<li>
+					<a href="/">
+						HOME
+					</a>
+				</li>
+				<li>
+          <a href="/portfolio">
+            PORTFOLIO
+          </a>
+        </li>
+        <li>
+          <a href="/about">
+            ABOUT
+          </a>
+        </li>
+        <li>
+          <a href="/contact-us">
+            CONTACT US
+          </a>
+        </li>
+			</ul>
+		</div>
+
 		<div class="footer-bottom">
-			やんやんとやんやん CopyRight?? 2019
+			<div class="footer-bottom-main">
+			  やんやんとやんやん
+			</div>
+			<div class="footer-bottom-sub">
+			  嬉しかったこと、楽しかったこと、勉強したこと。やんやんとやんやんの日常
+			</div>
 		</div>
 	</footer>
 </div>
