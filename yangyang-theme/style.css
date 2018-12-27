@@ -584,11 +584,11 @@ a {
 }
 
 a:visited {
-	color: purple;
+	color: #b6cfdd;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: #b6cfdd;
 }
 
 a:focus {
@@ -1012,7 +1012,14 @@ object {
 @media (max-width: 375px) {
   .header-title-wrap {
 		font-size: 25px;
-    padding: 20px 0px 0 4px;
+    padding: 14px 0px 0 23px;
+	}
+}
+
+@media (max-width: 340px) {
+  .header-title-wrap {
+		font-size: 25px;
+    padding: 14px 0px 0 3px;
 	}
 }
 
@@ -1021,6 +1028,10 @@ object {
 	float: right;
 	margin: -3px 20px 0;
 	font-size: 17px;
+}
+
+.header-main-navigation-items-wrap {
+	padding: 0;
 }
 
 .header-main-navigation-items-wrap li {
@@ -1042,9 +1053,9 @@ object {
 	display: none;
 }
 
-@media (max-width: 854px) {
+@media (max-width: 888px) {
   .header-main-navigation {
-		margin: -3px 2px 0;
+		margin: -3px 0 0;
 	}
 
 	.header-main-navigation-items-wrap li {
@@ -1060,9 +1071,9 @@ object {
 	.header-menu-toggle {
 		display: block;
 		height: 70px;
-		width: 80px;
+		width: 70px;
 		float: right;
-    padding: 0 34px;
+    padding: 0 31px;
 		background: #333333;
 		border: none;
 	}
@@ -1705,7 +1716,7 @@ object {
 
 @media screen and (max-width: 1072px) {
 	.sidebar-content li {
-		height: 130px;
+		height: 140px;
 	}
 }
 
@@ -2102,16 +2113,11 @@ object {
 }
 
 .article-thumbnail img {
-	height: 180px;
 	object-fit: cover;
 }
 @media screen and (max-width: 1192px) {
 	.article-thumbnail {
 		text-align: center;
-	}
-
-	.article-thumbnail img {
-		width: 100%;
 	}
 }
 
@@ -2221,6 +2227,9 @@ div.wpcf7 input {
 .nav-links {
 	text-align: center;
 	font-size: 16px;
+	width: 100%;
+	float: left;
+	margin-bottom: 40px;
 }
 
 .nav-links .current {
