@@ -31,7 +31,7 @@ get_header();
 
 				<div class="snsShareArea">
 					<!-- Twitter -->
-					<a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=VYZ3pDOkmPiwXtf&related=VYZ3pDOkmPiwXtf" target="_blank" rel="nofollow">
+					<a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=b3OJjuMQqAvlmO7&related=b3OJjuMQqAvlmO7" target="_blank" rel="nofollow">
 						Twitter
 					</a>
 
@@ -61,7 +61,7 @@ get_header();
 			<?php echo $page_cat_name ?>の記事
 		</div>
 
-		<ul class="related-post-content">
+		<ul class="related-post-content clear">
 
 			<?php
 				$related_categories = get_the_category($post->ID);
@@ -133,7 +133,7 @@ get_header();
 			アクセスランキング
 		</div>
 
-		<ul class="related-post-content">
+		<ul class="related-post-content clear">
 
 			<?php if( is_single() && !is_user_logged_in() && !isBot() ): //個別記事 かつ ログインしていない かつ 非ボット
 				set_post_views(); //アクセスをカウントする
@@ -159,9 +159,9 @@ get_header();
 					$cat_id   = $category[0]->cat_ID;
 				?>
 
-		 		<li class="article-wrap article-wrap-<?php echo $cat_id?>">
+		 		<li class="article-wrap article-wrap-<?php echo $cat_name?>">
 		 			<a href="<?php the_permalink(); ?>" class="article-link">
-		 				<div class="article-category article-category-<?php echo $cat_id?> single-category">
+		 				<div class="article-category article-category-<?php echo $cat_name?> single-category">
 		 					<?php echo $cat_name ?>
 		 				</div>
 

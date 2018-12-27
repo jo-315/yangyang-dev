@@ -1686,6 +1686,7 @@ object {
 
 .sidebar-content .article-wrap:hover div.article-thumbnail {
 	overflow: auto;
+	height: 180px;
 }
 
 .sidebar-link {
@@ -2051,6 +2052,7 @@ object {
 		width: calc(100% / 2);
 		padding: 0 50px;
 		height: 300px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -2104,8 +2106,10 @@ object {
 }
 
 .article-thumbnail img {
-	object-fit: cover;
+ 	object-fit: cover;
+	height: 180px;
 }
+
 @media screen and (max-width: 1192px) {
 	.article-thumbnail {
 		text-align: center;
