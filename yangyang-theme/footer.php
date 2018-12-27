@@ -27,13 +27,13 @@
           </a>
         </li>
         <li>
-          <a href="/about">
-            ABOUT
+          <a href="/about-us">
+            ABOUT US
           </a>
         </li>
         <li>
-          <a href="/contact-us">
-            CONTACT US
+          <a href="/contact">
+            CONTACT
           </a>
         </li>
 			</ul>

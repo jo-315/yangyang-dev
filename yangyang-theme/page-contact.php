@@ -3,7 +3,7 @@ get_header();
 ?>
 
 <div class="page_content_block">
-  <?php // echo do_shortcode( '[contact-form-7 id="54" title="コンタクトフォーム_default"]' ); ?>
+  <?php // echo do_shortcode( '[contact-form-7 id="11" title="コンタクトフォーム 1"]' ); ?>
   <?php echo do_shortcode( '[contact-form-7 id="48" title="コンタクトフォーム 1"]' ); ?>
 </div>
 
