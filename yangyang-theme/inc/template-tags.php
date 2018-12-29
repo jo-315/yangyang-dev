@@ -136,7 +136,9 @@ if ( ! function_exists( 'yangyang_theme_post_thumbnail' ) ) :
 			?>
 
 			<div class="article-thumbnail">
-				<?php the_post_thumbnail(); ?>
+				<?php the_post_thumbnail('post-thumbnail', array(
+					'class' => 'lazyload'
+				)); ?>
 			</div>
 
 		<?php else : ?>
