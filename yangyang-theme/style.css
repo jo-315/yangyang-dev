@@ -1990,6 +1990,10 @@ object {
 	height: 180px;
 }
 
+.font-bold {
+	font-weight: bold;
+}
+
 /* Header */
 .single-title-wrap {
 	overflow: auto;
