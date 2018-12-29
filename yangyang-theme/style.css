@@ -1998,6 +1998,12 @@ object {
 	font-size: 17px;
 }
 
+.img-desc {
+	text-align: center;
+	font-size: 14px;
+  margin-top: 40px;
+}
+
 /* Header */
 .single-title-wrap {
 	overflow: auto;
