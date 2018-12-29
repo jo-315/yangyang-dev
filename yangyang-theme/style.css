@@ -1680,13 +1680,16 @@ object {
 	margin-left: 5px;
 }
 
+..sidebar-content li a:visited {
+	color: #404040;
+}
+
 .sidebar-content .article-wrap:hover div {
 	overflow: visible;
 }
 
 .sidebar-content .article-wrap:hover div.article-thumbnail {
 	overflow: auto;
-	height: 180px;
 }
 
 .sidebar-link {
@@ -1717,7 +1720,7 @@ object {
 
 .sidebar-img img{
 	object-fit: cover;
-	height: 100px;
+	height: 110px;
   width: 140px;
 }
 
@@ -1954,6 +1957,10 @@ object {
 .single-content-main h3 {
 }
 
+.single-post-thumbnail .article-thumbnail {
+	height: 180px;
+}
+
 /* Header */
 .single-title-wrap {
 	overflow: auto;
@@ -2107,7 +2114,7 @@ object {
 
 .article-thumbnail img {
  	object-fit: cover;
-	height: 180px;
+	height: 100%;
 }
 
 @media screen and (max-width: 1192px) {
@@ -2190,6 +2197,13 @@ object {
 div #n2-ss-4 .n2-style-1101-heading {
 	background: #e27676 !important;
 }
+
+/* 目次 */
+#ez-toc-container {
+  margin: 50px auto;
+}
+
+
 
 /* --- Contact Us--- */
 div.wpcf7 {
