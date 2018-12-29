@@ -584,7 +584,7 @@ a {
 }
 
 a:visited {
-	color: #b6cfdd;
+	color: #404040;
 }
 
 a:hover, a:focus, a:active {
@@ -2213,6 +2213,31 @@ div.wpcf7 {
   font-family: 'smartUI';
 }
 
+div.wpcf7::after {
+	content: '';
+	background-image: url(./img/bed.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 200px;
+	width: 190px;
+	position: absolute;
+	bottom: -165px;
+  left: 5%;
+}
+
+@media screen and (max-width: 730px) {
+	div.wpcf7::after {
+		display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+	div.wpcf7 {
+		width: 95%;
+  }
+}
+
 div.wpcf7 input {
 	width: 100%;
 }
@@ -2230,6 +2255,10 @@ div.wpcf7 input {
 
 .wpcf7-submit:hover {
 	opacity: 0.6;
+}
+
+.contact-page {
+	position: relative;
 }
 
 /* Pagination */
