@@ -129,6 +129,8 @@ function yangyang_theme_scripts() {
 
 	wp_enqueue_script( 'yangyang-theme-original', get_template_directory_uri() . '/js/original.js', array('jquery') );
 
+	wp_enqueue_script( 'lazysize-yangyang' ,get_template_directory_uri() . '/js/lazysizes.min.js');
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

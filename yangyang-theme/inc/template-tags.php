@@ -147,6 +147,7 @@ if ( ! function_exists( 'yangyang_theme_post_thumbnail' ) ) :
 					'alt' => the_title_attribute( array(
 						'echo' => false,
 					) ),
+					'class' => 'lazyload'
 				) );
 				?>
 			</div>
