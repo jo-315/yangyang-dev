@@ -1210,10 +1210,11 @@ object {
 .header-content--img-desc-content span:before {
 	position: absolute;
 	content: "";
-	border-bottom: solid 4px #e27676;
+	height: 7px;
+  background: repeating-linear-gradient(-45deg, #e27676, #e27676 2px, #e29696 2px, #e29696 4px);
 	width: 220px;
-	bottom: 0;
-	left: 40px;
+	bottom: 20px;
+	left: 65px;
 }
 
 .header-content--img-01-wrap {
@@ -1234,6 +1235,30 @@ object {
 
 .header-content--img-02 {
 	height: 350px;
+}
+
+@media (max-width: 406px) {
+	.header-content--img-desc-content {
+		width: 215px;
+	}
+
+	.header-content--img-desc {
+		font-size: 50px;
+	}
+
+	.header-content--img-desc-content span {
+    letter-spacing: -10px;
+	}
+
+	.header-content--img-desc-content span:before {
+    width: 160px;
+		bottom: 15px;
+		left: 50px;
+	}
+
+	.header-content--img-desc-content span:first-child {
+		margin-top: 30px;
+	}
 }
 
 /* article */
@@ -2244,6 +2269,7 @@ div #n2-ss-4 .n2-style-1101-heading {
 /* 目次 */
 #ez-toc-container {
   margin: 50px auto;
+	border: none !important;
 }
 
 #ez-toc-container.ez-toc-light-blue {
