@@ -2333,6 +2333,29 @@ div.wpcf7 input {
 	position: relative;
 }
 
+/* いいね機能 */
+.wp_ulike_likers_wrapper {
+	display: none !important;
+}
+
+.wp_ulike_general_class label:hover {
+	opacity: 0.6;
+	color:#e29696;
+}
+
+.wpulike-success {
+  background-color: #e29696 !important;
+	padding: 5px !important;
+}
+
+.wpulike-success::before {
+	display: none;
+}
+
+.wpulike-error {
+	display: none;
+}
+
 /* Pagination */
 .nav-links {
 	text-align: center;
