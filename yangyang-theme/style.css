@@ -2915,6 +2915,9 @@ div.wpcf7 input {
 	.sports {
     width: 100%;
   }
+	.about-sns {
+		margin-bottom: 10px;
+	}
 	.sports {
 		padding: 0 22px;
 	}
@@ -2970,21 +2973,21 @@ div.wpcf7 input {
 
   .aboutContainer_textArea {
     padding-top: 10px;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 1.5;
   }
 
   .aboutContainer_titleArea p {
-    font-size:17px;
-    margin-left: 12px;
+    font-size:25px;
+    margin-left: 0px;
   }
 }
 
 @media screen and (max-width: 375px){
   .aboutContainer_titleArea p {
-    font-size:16px;
-    margin-left: 12px;
-  }
+		font-size: 24px;
+    margin-left: -3px;
+	}
   .aboutText{
     font-size:15px;
   }
