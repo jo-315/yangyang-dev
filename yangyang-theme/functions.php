@@ -123,9 +123,9 @@ function yangyang_theme_scripts() {
 
 	wp_enqueue_style( 'yangyang-theme-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
 
-	wp_enqueue_script( 'yangyang-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'yangyang-theme-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
 
-	wp_enqueue_script( 'yangyang-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'yangyang-theme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array('jquery'), '20151215', true );
 
 	wp_enqueue_script( 'yangyang-theme-original', get_template_directory_uri() . '/js/original.js', array('jquery') );
 
@@ -136,6 +136,15 @@ function yangyang_theme_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'yangyang_theme_scripts' );
+
+// headerの不要タグを削除
+remove_action('wp_head', 'wp_generator');
+remove_action('wp_head', 'wlwmanifest_link');
+remove_action('wp_head', 'adjacent_posts_rel_link_wp_head');
+remove_action('wp_head', 'rsd_link');
+remove_action('wp_head', 'wp_shortlink_wp_head');
+remove_action('wp_head', 'feed_links', 2);
+remove_action('wp_head', 'feed_links_extra', 3);
 
 /**
  * Implement the Custom Header feature.
