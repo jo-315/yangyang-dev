@@ -27,8 +27,8 @@
           </a>
         </li>
         <li>
-          <a href="/about-us">
-            ABOUT US
+          <a href="/about">
+            ABOUT
           </a>
         </li>
         <li>

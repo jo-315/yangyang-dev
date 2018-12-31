@@ -106,11 +106,11 @@ get_header();
             好きな本<span class="about-subTitle03 pink">book</span>
           </p>
 
-          <p class="aboutText aboutText01 aboutText02-book left">
+          <p class="aboutText aboutText01 aboutText02 left">
             <span class="jocolor">じょー</span><br />・こころ&nbsp;夏目漱石
           </p>
 
-          <p class="aboutText aboutText01 aboutText02-book left">
+          <p class="aboutText aboutText02 aboutText03 left">
             <span class="yancolor" >やんやん</span><br />・ノルウェイの森&nbsp;村上春樹
           </p>
         </div>
@@ -139,7 +139,7 @@ get_header();
 
         <p class="aboutText aboutText01 left">
           <span class="jocolor">じょー</span><br />・Baseconnect.Inc エンジニア<br />・<a href="https://moire.xsrv.jp/" target="_blank">moire 社会貢献活動に繋ぐWebメディア</a> 代表<br />
-          ・阪大NICE代表 / west(関西NICE運営委員会) / 関西NICE学生チーム発足人
+          ・阪大NICE代表 / west(関西NICE運営委員会)
         </p>
 
         <p class="aboutText left">

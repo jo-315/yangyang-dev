@@ -2582,6 +2582,7 @@ div.wpcf7 input {
 }
 .aboutBlock01--item {
 	width: 100%;
+	margin-bottom: 10px;
 }
 .aboutBlock02{
   width: 42%;
@@ -2600,7 +2601,7 @@ div.wpcf7 input {
 }
 .nameage{
   background-color:#f2eae9;
-  width: 56%;
+  width: 52%;
   padding:30px 22px 10px 22px;
   float: left;
   margin-right: 2%;
@@ -2608,8 +2609,8 @@ div.wpcf7 input {
 }
 .major{
   background-color:#edcece;
-  width: 42%;
-  padding:30px 22px 37px 22px;
+  width: 45%;
+  padding:30px 22px 10px 22px;
   float: left;
 }
 .sports{
@@ -2617,7 +2618,6 @@ div.wpcf7 input {
   width: 70%;
   padding:20px 22px 40px 22px;
   float: left;
-	margin-top: 10px;
 }
 .birthplace{
   width: 48%;
@@ -2909,7 +2909,6 @@ div.wpcf7 input {
   }
   .nameage{
     width: 100%;
-    margin-bottom: 10px;
   }
   .major,
 	.about-sns,
