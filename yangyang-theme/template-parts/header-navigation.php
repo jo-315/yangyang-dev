@@ -25,6 +25,45 @@
         </a>
       </li>
       <li>
+        <a>
+          ARTICLE
+        </a>
+        <div class="header-main-navigation-child">
+          <ul>
+            <li>
+              <a href="/category/trip/">
+                Trip
+              </a>
+            </li>
+            <li>
+              <a href="/category/academic/">
+                Academic
+              </a>
+            </li>
+            <li>
+              <a href="/category/skill/">
+                Skill
+              </a>
+            </li>
+            <li>
+              <a href="/category/thought/">
+                Thought
+              </a>
+            </li>
+            <li>
+              <a href="/category/lifestyle/">
+                Lifestyle
+              </a>
+            </li>
+            <li>
+              <a href="/category/tweet/">
+                Tweet
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
         <a href="/portfolio">
           PORTFOLIO
         </a>

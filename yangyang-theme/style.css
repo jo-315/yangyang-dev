@@ -989,7 +989,7 @@ object {
 	padding: 0 10px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 782px) {
   .header-top-wrap {
 		height: 70px;
 	}
@@ -1034,6 +1034,7 @@ object {
 	list-style: none;
 	float: left;
 	margin: 0 19px;
+	position: relative;
 }
 
 .header-main-navigation-items-wrap li a {
@@ -1049,7 +1050,52 @@ object {
 	display: none;
 }
 
-@media (max-width: 888px) {
+/* ナビゲーション内のトグル */
+.header-main-navigation-items-wrap li:hover .header-main-navigation-child {
+	display: block;
+}
+
+.header-main-navigation-items-wrap li:hover .header-main-navigation-child li a {
+	color: #e29696;
+}
+
+.header-main-navigation-items-wrap li:hover .header-main-navigation-child li:hover a {
+	color: #FFFFFF;
+}
+
+.header-main-navigation-child {
+	display: none;
+	position: absolute;
+	background: #686666;
+	width: 150%;
+  left: -25%;
+	text-align: center;
+	transition: all .2s;
+}
+
+.header-main-navigation-child ul{
+	margin: 0;
+	padding: 0;
+}
+
+.header-main-navigation-child ul li{
+	list-style: none;
+	float: none;
+	margin-top: 4px;
+}
+
+.header-main-navigation-child ul li a{
+	text-decoration: none;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+	.header-main-navigation-child ul {
+		padding: 10px 0;
+	}
+}
+
+@media (max-width: 912px) {
   .header-main-navigation {
 		margin: -3px 0 0;
 	}
@@ -1059,7 +1105,7 @@ object {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 782px) {
 	.header-main-navigation-wrap {
 		padding-right: 0;
 	}
@@ -1119,6 +1165,7 @@ object {
 
 	.header-main-navigation-child ul {
 		padding: 0;
+		margin-left: 20px;
 	}
 
 	.header-main-navigation li,
@@ -1142,7 +1189,7 @@ object {
 		text-transform: uppercase;
 		letter-spacing: 2.5px;
 		padding: 15px 55px 15px 30px;
-		color: #fff;
+		color: #e29696;
 		font-size: 16px;
 		line-height: 10px;
 	}
@@ -2675,22 +2722,6 @@ div.wpcf7 input {
   padding:30px 22px 20px 22px;
   float: left;
 }
-.about-footerImage{
-	position: relative;
-	float: left;
-	height: 1px;
-	width: 100%;
-	margin-bottom: 80px;
-}
-
-.about-footerImage img {
-	position: absolute;
-	width: 150px;
-	height: 150px;
-	right: 10px;
-	top: -60px;
-}
-
 .about-sns {
 	background-color: #edcece;
   width: 28%;
@@ -2866,11 +2897,6 @@ div.wpcf7 input {
     margin-right:0;
     margin-bottom: 10px;
   }
-}
-@media screen and (max-width: 601px){
-	.about-footerImage img{
-		display: none;
-	}
 }
 @media screen and (max-width: 515px){
   .aboutBlock_profile {

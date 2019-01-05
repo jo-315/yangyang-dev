@@ -201,10 +201,6 @@ get_header();
       </p>
     </div>
   </div>
-
-  <div class="about-footerImage">
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_05.png" class="lazyload"/>
-  </div>
 </div>
 
 
