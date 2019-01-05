@@ -25,7 +25,7 @@
         </a>
       </li>
       <li>
-        <a>
+        <a href="/">
           ARTICLE
         </a>
         <div class="header-main-navigation-child">
