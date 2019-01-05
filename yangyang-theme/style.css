@@ -2185,15 +2185,13 @@ rank
 }
 
 /* Related Post */
-.related-post-wrap,
-.single--popular-post-wrap  {
+.related-post-wrap  {
 	width: 90%;
 	margin: 0 auto;
 	overflow: auto;
 }
 
-.related-post-title,
-.single--popular-post-title {
+.related-post-title{
 	font-size: 30px;
 	font-family: 'smartUI';
 	border-bottom: dashed 5px #e27676;
@@ -2255,11 +2253,6 @@ rank
 
 .archive-main-title-wrap {
 	width: 90%;
-}
-
-/* Popular */
-.single--popular-post-wrap {
-	margin-top: 30px;
 }
 
 /* --- 記事一覧 --- */
