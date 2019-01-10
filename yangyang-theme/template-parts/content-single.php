@@ -41,5 +41,15 @@
     人気記事ランキングに反映されます。クリックお願いします！
   </div>
 
+  <div class="single_ad_block">
+    <a href="https://px.a8.net/svt/ejp?a8mat=356QIC+C7ZCTU+29HM+6AC5D" target="_blank" rel="nofollow">
+    <img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=190110900739&wid=001&eno=01&mid=s00000010561001056000&mc=1"></a>
+    <img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=356QIC+C7ZCTU+29HM+6AC5D" alt="">
+
+    <a href="https://px.a8.net/svt/ejp?a8mat=356QIC+CR186Q+465A+60H7L" target="_blank" rel="nofollow">
+    <img border="0" width="300" height="250" alt="" src="https://www22.a8.net/svt/bgt?aid=190110900771&wid=001&eno=01&mid=s00000019459001010000&mc=1"></a>
+    <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=356QIC+CR186Q+465A+60H7L" alt="">
+  </div>
+
   </div>
 </div>

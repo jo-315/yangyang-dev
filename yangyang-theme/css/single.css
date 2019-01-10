@@ -84,6 +84,12 @@
   margin-top: 40px;
 }
 
+/* ad */
+.single_ad_block {
+	text-align: center;
+	margin-top: 20px;
+}
+
 /* Header */
 .single-title-wrap {
 	overflow: auto;

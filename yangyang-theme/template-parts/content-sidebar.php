@@ -128,4 +128,8 @@
 
 		</ul>
 	</div>
+
+	<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+B2B0HE+4704+5Z6WX" target="_blank" rel="nofollow">
+	<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190110900669&wid=001&eno=01&mid=s00000019570001004000&mc=1"></a>
+	<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+B2B0HE+4704+5Z6WX" alt="">
 </aside>
