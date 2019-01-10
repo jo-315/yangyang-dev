@@ -1631,6 +1631,20 @@ rank
 	width: 30px;
 }
 
+/* sidebar-ad */
+.sidebar-ad-link {
+  padding-bottom: 20px;
+}
+
+.sidebar-ad-link li {
+	height: auto;
+}
+
+.sidebar-ad {
+	text-align: center;
+	margin-top: 20px;
+}
+
 /* Popular */
 .popular-article {
   margin: 0 0 50px;

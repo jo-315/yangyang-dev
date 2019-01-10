@@ -30,6 +30,9 @@ get_header();
 				</div>
 
 				<div class="snsShareArea">
+					<p>
+						面白かったらシェアお願いします!!
+					</p>
 					<!-- Twitter -->
 					<a class="btn--twitter" href="http://twitter.com/share?url=<?php the_permalink();?>&text=<?php echo get_the_title(); ?>&via=b3OJjuMQqAvlmO7&related=b3OJjuMQqAvlmO7" target="_blank" rel="nofollow">
 						Twitter

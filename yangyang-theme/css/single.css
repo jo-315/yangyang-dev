@@ -17,10 +17,6 @@
   left: 60px;
 }
 
-.single-content-main {
-  margin-bottom: 80px;
-}
-
 /* 執筆に使うクラス */
 
 .single-content-main h2 {
@@ -87,7 +83,7 @@
 /* ad */
 .single_ad_block {
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 /* Header */

@@ -129,7 +129,35 @@
 		</ul>
 	</div>
 
-	<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+B2B0HE+4704+5Z6WX" target="_blank" rel="nofollow">
-	<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190110900669&wid=001&eno=01&mid=s00000019570001004000&mc=1"></a>
-	<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+B2B0HE+4704+5Z6WX" alt="">
+	<!-- ad -->
+	<div class="sidebar-content sidebar-ad-link">
+		<div class="sidebar-title">
+			おすすめ記事
+		</div>
+		<ul>
+			<li>
+				<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+FVK5IQ+CO4+60OXE" target="_blank" rel="nofollow">月額900円(税抜)から、高速・多機能・高安定レンタルサーバー『エックスサーバー』</a>
+				<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=356QIC+FVK5IQ+CO4+60OXE" alt="">
+			</li>
+			<li>
+				<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+GBMUUQ+3VJC+NVP2Q" target="_blank" rel="nofollow">韓国の多数芸能人着用で人気のブランド【IZRO(イズロ)】</a>
+				<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+GBMUUQ+3VJC+NVP2Q" alt="">
+			</li>
+			<li>
+				<a href="https://px.a8.net/svt/ejp?a8mat=356QID+5YCTU+3EY4+TUGK2" target="_blank" rel="nofollow">大人の贅沢チョコレートなら【9 STORIES CHOCOLATES】</a>
+				<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=356QID+5YCTU+3EY4+TUGK2" alt="">
+			</li>
+			<li>
+				<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+C08PYQ+3UCU+65MEA" target="_blank" rel="nofollow">最大50%OFF！会員限定アウトレット商品有り♪【ロッテ オンラインショップ】</a>
+				<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=356QIC+C08PYQ+3UCU+65MEA" alt="">
+			</li>
+		</ul>
+
+	</div>
+
+	<div class="sidebar-ad">
+		<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+B2B0HE+4704+5Z6WX" target="_blank" rel="nofollow">
+		<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190110900669&wid=001&eno=01&mid=s00000019570001004000&mc=1"></a>
+		<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+B2B0HE+4704+5Z6WX" alt="">
+	</div>
 </aside>
