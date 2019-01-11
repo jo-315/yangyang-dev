@@ -1645,6 +1645,10 @@ rank
 	margin-top: 20px;
 }
 
+.sidebar-ad a:hover {
+	opacity: 0.6;
+}
+
 /* Popular */
 .popular-article {
   margin: 0 0 50px;

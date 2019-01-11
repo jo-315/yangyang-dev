@@ -83,6 +83,11 @@
 /* ad */
 .single_ad_block {
 	text-align: center;
+	overflow: auto;
+}
+
+.single_ad_block a:hover {
+	opacity: 0.6;
 }
 
 .single_ad_item {
