@@ -83,7 +83,20 @@
 /* ad */
 .single_ad_block {
 	text-align: center;
-	margin-top: 40px;
+}
+
+.single_ad_item {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+	.single_ad_item {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
 }
 
 /* Header */
