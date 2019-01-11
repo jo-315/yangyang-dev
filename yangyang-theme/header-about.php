@@ -5,6 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel='stylesheet' id='yangyang-theme-style_about-css'  href='<?php echo get_template_directory_uri()?>/css/about.css' type='text/css' media='all' />
 	<?php wp_head(); ?>
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+	    google_ad_client: "ca-pub-2828170763777117",
+	    enable_page_level_ads: true
+	  });
+	</script>
 </head>
 
 <body>
