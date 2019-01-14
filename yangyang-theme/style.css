@@ -1464,6 +1464,16 @@ a:hover, a:active {
 	margin: 35px 0 40px;
 }
 
+
+@media screen and (max-width: 460px) {
+  .site-main-title {
+  	font-size: 25px;
+  	height: 25px;
+		bottom: 20px;
+  }
+}
+
+
 /* --- Sidebar --- */
 .sidebar-wrap {
 	width: 30%;
@@ -1656,7 +1666,7 @@ rank
 
 /* Recommand */
 .recommend-article {
-
+  margin-top: 30px;
 }
 
 /* Footer */

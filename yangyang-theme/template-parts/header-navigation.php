@@ -42,7 +42,7 @@
             </li>
             <li>
               <a href="/category/skill/">
-                Skill
+                HP Skill
               </a>
             </li>
             <li>
@@ -56,8 +56,8 @@
               </a>
             </li>
             <li>
-              <a href="/category/tweet/">
-                Tweet
+              <a href="/category/book/">
+                Book
               </a>
             </li>
           </ul>

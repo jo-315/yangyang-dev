@@ -70,3 +70,10 @@
 .archive-main-title-wrap {
 	width: 90%;
 }
+
+@media screen and (max-width: 460px) {
+  .category-page-title {
+  	font-size: 25px;
+  	height: 25px;
+  }
+}

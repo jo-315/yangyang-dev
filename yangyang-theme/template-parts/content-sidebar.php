@@ -1,5 +1,17 @@
 <aside class="sidebar-wrap">
 
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- リンク広告01 -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-2828170763777117"
+	     data-ad-slot="2150476266"
+	     data-ad-format="link"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	(adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
 	<!-- 人気記事 -->
 	<div class="sidebar-content recommend-article">
 		<div class="sidebar-title">
@@ -156,8 +168,16 @@
 	</div>
 
 	<div class="sidebar-ad">
-		<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+B2B0HE+4704+5Z6WX" target="_blank" rel="nofollow">
-		<img border="0" width="300" height="250" alt="" src="https://www23.a8.net/svt/bgt?aid=190110900669&wid=001&eno=01&mid=s00000019570001004000&mc=1"></a>
-		<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+B2B0HE+4704+5Z6WX" alt="">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- サイドバー下部 -->
+		<ins class="adsbygoogle"
+		     style="display:block"
+		     data-ad-client="ca-pub-2828170763777117"
+		     data-ad-slot="2874963630"
+		     data-ad-format="auto"
+		     data-full-width-responsive="true"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
 	</div>
 </aside>
