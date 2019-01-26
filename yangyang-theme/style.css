@@ -1296,12 +1296,11 @@ a:hover, a:active {
 
 /* --- Content --- */
 .site-main-wrap {
-	overflow: auto;
+	display: flex;
 }
 
 .site-main {
   width: 70%;
-	float: left;
 }
 
 .site-main-content {
@@ -1477,7 +1476,6 @@ a:hover, a:active {
 /* --- Sidebar --- */
 .sidebar-wrap {
 	width: 30%;
-  float: left;
 }
 
 .sidebar-content {
@@ -1502,7 +1500,7 @@ a:hover, a:active {
 	margin-left: 5px;
 }
 
-..sidebar-content li a:visited {
+.sidebar-content li a:visited {
 	color: #404040;
 }
 
@@ -1516,6 +1514,12 @@ a:hover, a:active {
 
 .sidebar-link {
 	position: absolute;
+}
+
+.sidebar_follow {
+	position: -webkit-sticku;
+	position: sticky;
+	top: 60px;
 }
 
 @media screen and (max-width: 1072px) {
