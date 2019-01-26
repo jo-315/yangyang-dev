@@ -42,7 +42,7 @@
             </li>
             <li>
               <a href="/category/skill/">
-                HP Skill
+                Web Skill
               </a>
             </li>
             <li>

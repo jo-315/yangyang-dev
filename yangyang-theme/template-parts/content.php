@@ -1,11 +1,12 @@
 <?php
 	$category = get_the_category();
 	$cat_name = $category[0]->cat_name;
+	$cat_slug = $category[0]->slug;
 ?>
-<div class="content-article-wrap article-wrap article-wrap-<?php echo $cat_name?>">
+<div class="content-article-wrap article-wrap article-wrap-<?php echo $cat_slug?>">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<a href="<?php the_permalink(); ?>" class="article-link">
-		<div class="article-category article-category-<?php echo $cat_name?>">
+		<div class="article-category article-category-<?php echo $cat_slug?>">
 			<?php echo $cat_name ?>
 		</div>
 

@@ -6,6 +6,7 @@ get_header();
 	$page_category = get_the_category();
 	$page_cat_name = $page_category[0]->cat_name;
 	$page_cat_id   = $page_category[0]->cat_ID;
+	$cat_slug = $page_category[0]->slug;
 ?>
 
 <div class="content-area">
@@ -67,21 +68,11 @@ get_header();
 		<ul class="related-post-content clear">
 
 			<?php
-				$related_categories = get_the_category($post->ID);
-				$related_cat_name = $related_categories[0]->cat_name;
-				$related_cat_id   = $related_categories[0]->cat_ID;
-
-				$category_ID = array();
-
-				foreach($related_categories as $category){
-						array_push($category_ID,$category->cat_ID);
-				}
-
 				$posts_number = 4; // 表示したい件数を指定
 
 				$args = array(
 						'post__not_in'=>array($post->ID), // 現在のページの投稿を除外
-						'category__in'=>$category_ID, // 現在の投稿のカテゴリーの関連記事を取得
+						'category__in'=>$page_cat_id, // 現在の投稿のカテゴリーの関連記事を取得
 						'orderby'=>'rand', // ランダムに並べる
 						'posts_per_page'=>$posts_number, // 表示する件数の指定
 				);
@@ -90,10 +81,10 @@ get_header();
 				while($query->have_posts()):$query->the_post();
 			?>
 
-			<li class="article-wrap article-wrap-<?php echo $related_cat_name?>">
+			<li class="article-wrap article-wrap-<?php echo $cat_slug?>">
 				<a href="<?php the_permalink(); ?>" class="article-link">
-					<div class="article-category article-category-<?php echo $related_cat_name?> single-category">
-						<?php echo $related_cat_name ?>
+					<div class="article-category article-category-<?php echo $cat_slug?> single-category">
+						<?php echo $page_cat_name ?>
 					</div>
 
 					<div class="article-thumbnail-wrap single-post-thumbnail">

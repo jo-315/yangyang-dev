@@ -2001,32 +2001,32 @@ singleの関連記事と共通
 }
 
 /* カテゴリーごとの設定  */
-.article-wrap-Trip:hover .article-link,
-.article-wrap-Skill:hover .article-link,
-.article-wrap-Lifestyle:hover .article-link {
+.article-wrap-trip:hover .article-link,
+.article-wrap-skill:hover .article-link,
+.article-wrap-lifestyle:hover .article-link {
 	color: #e29696;
 }
 
-.article-category-Trip,
-.article-category-Skill,
-.article-category-Lifestyle,
-.article-wrap-Trip:hover .article-thumbnail,
-.article-wrap-Skill:hover .article-thumbnail,
-.article-wrap-Lifestyle:hover .article-thumbnail {
+.article-category-trip,
+.article-category-skill,
+.article-category-lifestyle,
+.article-wrap-trip:hover .article-thumbnail,
+.article-wrap-skill:hover .article-thumbnail,
+.article-wrap-lifestyle:hover .article-thumbnail {
 	background: #e29696;
 }
 
-.article-wrap-Academic:hover .article-link,
-.article-wrap-Thought:hover .article-link,
-.article-wrap-Tweet:hover .article-link {
+.article-wrap-academic:hover .article-link,
+.article-wrap-thought:hover .article-link,
+.article-wrap-book:hover .article-link {
 	color: #a6d1ba;
 }
 
-.article-category-Academic,
-.article-category-Thought,
-.article-category-Tweet,
-.article-wrap-Academic:hover .article-thumbnail,
-.article-wrap-Thought:hover .article-thumbnail,
-.article-wrap-Tweet:hover .article-thumbnail {
+.article-category-academic,
+.article-category-thought,
+.article-category-book,
+.article-wrap-academic:hover .article-thumbnail,
+.article-wrap-thought:hover .article-thumbnail,
+.article-wrap-book:hover .article-thumbnail {
 	background: #a6d1ba;
 }
