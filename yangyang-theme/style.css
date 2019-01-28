@@ -1299,6 +1299,12 @@ a:hover, a:active {
 	display: flex;
 }
 
+@media screen and (max-width: 760px) {
+	.site-main-wrap {
+		display: block;
+	}
+}
+
 .site-main {
   width: 70%;
 }
