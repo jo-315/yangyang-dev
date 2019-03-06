@@ -12,47 +12,33 @@
 	(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 
-	<!-- アクセスランキング -->
-	<div class="sidebar-content popular-article">
+
+	<!-- 人気記事 -->
+	<div class="sidebar-content recommend-article">
 		<div class="sidebar-title">
-			アクセスランキング
-			<!-- <img
-				src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-jo.png"
-				class="header-logo"
-			> -->
+			人気記事
 		</div>
 		<ul>
-
-			<?php if( is_single() && !is_user_logged_in() && !isBot() ): //個別記事 かつ ログインしていない かつ 非ボット
-				set_post_views(); //アクセスをカウントする
-			endif; ?>
-
 			<?php
-				$args = array(
-					'post_type'     => 'post',
-					'numberposts'   => 4,       //表示数
-					'meta_key'      => 'pv_count',
-					'orderby'       => 'meta_value_num',
-					'order'         => 'DESC',
-				);
-				$posts = get_posts( $args );
-				if( $posts ):
+				$the_query = new WP_Query(array(
+					'post_status' => 'published',
+					'post_type' => 'post',
+					'orderby' => 'meta_value_num',
+					'meta_key' => '_liked',
+					'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
+					'posts_per_page'=> '3'
+				));
 			?>
 
 			<?php
-			  $count = 0;
-			  foreach( $posts as $post ) : setup_postdata( $post );
+				$count = 0;
+				while($the_query->have_posts()):$the_query->the_post();
 
 				$count += 1;
 			?>
 
-				<?php
-					// $category = get_the_category();
-					// $cat_name = $category[0]->cat_name;
-				?>
-
-		 		<li class="article-wrap article-rank-wrap-<?php echo $count?>">
-		 			<a href="<?php the_permalink(); ?>" class="article-link sidebar-link">
+				<li class="article-wrap article-rank-wrap-<?php echo $count?>">
+					<a href="<?php the_permalink(); ?>" class="article-link sidebar-link">
 						<div class="article_rank_title article_rank_title-<?php echo $count?>">
 							<?php echo $count?>
 						</div>
@@ -61,54 +47,63 @@
 							<?php yangyang_theme_post_thumbnail(); ?>
 						</div>
 
-		 				<div class="sidebar-desc">
+						<div class="sidebar-desc">
 
-		 					<div class="sidebar-item-title">
-		 						<?php the_title( '<span>', '</span>' ); ?>
-		 					</div>
+							<div class="sidebar-item-title">
+								<?php the_title( '<span>', '</span>' ); ?>
+							</div>
 
- 							<div class="sidebar-desc-author">
- 								<?php yangyang_theme_posted_by(); ?>
- 							</div>
+							<div class="sidebar-desc-author">
+								<?php yangyang_theme_posted_by(); ?>
+							</div>
 						</div>
-		 			</a>
-		 		</li>
+					</a>
+				</li>
 			<?php
-		    endforeach;
-				wp_reset_postdata();
+				endwhile;
 			?>
-			<?php else : ?>
-				<p>アクセスランキングはまだ集計されていません。</p>
-			<?php endif; ?>
-
 		</ul>
 	</div>
 
 	<div class="sidebar_follow">
-
-		<!-- 人気記事 -->
-		<div class="sidebar-content recommend-article">
+	　  	<!-- アクセスランキング -->
+		<div class="sidebar-content popular-article">
 			<div class="sidebar-title">
-				人気記事
+				アクセスランキング
+				<!-- <img
+					src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-jo.png"
+					class="header-logo"
+				> -->
 			</div>
 			<ul>
+
+				<?php if( is_single() && !is_user_logged_in() && !isBot() ): //個別記事 かつ ログインしていない かつ 非ボット
+					set_post_views(); //アクセスをカウントする
+				endif; ?>
+
 				<?php
-					$the_query = new WP_Query(array(
-						'post_status' => 'published',
-						'post_type' => 'post',
-						'orderby' => 'meta_value_num',
-						'meta_key' => '_liked',
-						'paged' => (get_query_var('paged')) ? get_query_var('paged') : 1,
-						'posts_per_page'=> '3'
-					));
+					$args = array(
+						'post_type'     => 'post',
+						'numberposts'   => 4,       //表示数
+						'meta_key'      => 'pv_count',
+						'orderby'       => 'meta_value_num',
+						'order'         => 'DESC',
+					);
+					$posts = get_posts( $args );
+					if( $posts ):
 				?>
 
 				<?php
 					$count = 0;
-					while($the_query->have_posts()):$the_query->the_post();
+					foreach( $posts as $post ) : setup_postdata( $post );
 
 					$count += 1;
 				?>
+
+					<?php
+						// $category = get_the_category();
+						// $cat_name = $category[0]->cat_name;
+					?>
 
 					<li class="article-wrap article-rank-wrap-<?php echo $count?>">
 						<a href="<?php the_permalink(); ?>" class="article-link sidebar-link">
@@ -133,34 +128,20 @@
 						</a>
 					</li>
 				<?php
-					endwhile;
+					endforeach;
+					wp_reset_postdata();
 				?>
+				<?php else : ?>
+					<p>アクセスランキングはまだ集計されていません。</p>
+				<?php endif; ?>
+
 			</ul>
 		</div>
 
-		<!-- ad -->
-		<div class="sidebar-content sidebar-ad-link">
-			<div class="sidebar-title">
-				おすすめ記事
-			</div>
-			<ul>
-				<li>
-					<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+FVK5IQ+CO4+60OXE" target="_blank" rel="nofollow">月額900円(税抜)から、高速・多機能・高安定レンタルサーバー『エックスサーバー』</a>
-					<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=356QIC+FVK5IQ+CO4+60OXE" alt="">
-				</li>
-				<li>
-					<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+GBMUUQ+3VJC+NVP2Q" target="_blank" rel="nofollow">韓国の多数芸能人着用で人気のブランド【IZRO(イズロ)】</a>
-					<img border="0" width="1" height="1" src="https://www19.a8.net/0.gif?a8mat=356QIC+GBMUUQ+3VJC+NVP2Q" alt="">
-				</li>
-				<li>
-					<a href="https://px.a8.net/svt/ejp?a8mat=356QID+5YCTU+3EY4+TUGK2" target="_blank" rel="nofollow">大人の贅沢チョコレートなら【9 STORIES CHOCOLATES】</a>
-					<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=356QID+5YCTU+3EY4+TUGK2" alt="">
-				</li>
-				<li>
-					<a href="https://px.a8.net/svt/ejp?a8mat=356QIC+C08PYQ+3UCU+65MEA" target="_blank" rel="nofollow">最大50%OFF！会員限定アウトレット商品有り♪【ロッテ オンラインショップ】</a>
-					<img border="0" width="1" height="1" src="https://www13.a8.net/0.gif?a8mat=356QIC+C08PYQ+3UCU+65MEA" alt="">
-				</li>
-			</ul>
+		<div class="sidebar-content">
+			<a href="/tag/ノルウェー/" class="sidebar-img-link">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/norway.png" alt="" />
+			</a>
 		</div>
 
 		<div class="sidebar-ad">

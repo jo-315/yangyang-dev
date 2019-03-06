@@ -1485,7 +1485,12 @@ a:hover, a:active {
 }
 
 .sidebar-content {
+	position: relative;
 	background: #ffffff;
+}
+
+.sidebar-img-link:hover {
+	opacity: 0.6;
 }
 
 .sidebar-title {
@@ -1525,7 +1530,7 @@ a:hover, a:active {
 .sidebar_follow {
 	position: -webkit-sticku;
 	position: sticky;
-	top: 60px;
+	top: 30px;
 }
 
 @media screen and (max-width: 1072px) {
@@ -1651,32 +1656,14 @@ rank
 	width: 30px;
 }
 
-/* sidebar-ad */
-.sidebar-ad-link {
-  padding-bottom: 20px;
-}
-
-.sidebar-ad-link li {
-	height: auto;
-}
-
-.sidebar-ad {
-	text-align: center;
-	margin-top: 20px;
-}
-
-.sidebar-ad a:hover {
-	opacity: 0.6;
-}
-
 /* Popular */
 .popular-article {
-  margin: 50px 0;
+	/* margin-top: 30px; */
 }
 
 /* Recommand */
 .recommend-article {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 /* Footer */
