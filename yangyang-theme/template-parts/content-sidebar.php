@@ -1,17 +1,18 @@
 <aside class="sidebar-wrap">
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- リンク広告01 -->
-	<ins class="adsbygoogle"
-	     style="display:block"
-	     data-ad-client="ca-pub-2828170763777117"
-	     data-ad-slot="2150476266"
-	     data-ad-format="link"
-	     data-full-width-responsive="true"></ins>
-	<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-
+	<div class="sidebar_ad_wrap">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- リンク広告01 -->
+		<ins class="adsbygoogle"
+				style="display:block"
+				data-ad-client="ca-pub-2828170763777117"
+				data-ad-slot="2150476266"
+				data-ad-format="link"
+				data-full-width-responsive="true"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	</div>
 
 	<!-- 人気記事 -->
 	<div class="sidebar-content recommend-article">
@@ -138,13 +139,13 @@
 			</ul>
 		</div>
 
-		<div class="sidebar-content">
+		<div class="sidebar-content sidebar_ad_wrap">
 			<a href="/tag/ノルウェー/" class="sidebar-img-link">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/norway.png" alt="" />
 			</a>
 		</div>
 
-		<div class="sidebar-ad">
+		<div class="sidebar_ad_wrap">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- サイドバー下部 -->
 			<ins class="adsbygoogle"

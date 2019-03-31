@@ -1619,6 +1619,11 @@ rank
 	.sidebar-wrap {
 		width: 100%;
 	}
+
+	.sidebar_ad_wrap {
+		width: 95%;
+		margin: 0 auto;
+	}
 }
 
 /* desc */
