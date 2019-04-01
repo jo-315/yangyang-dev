@@ -409,16 +409,24 @@
     width: 15%;
   }
 }
-@media screen and (max-width: 638px){
-  .major{
-    padding: 30px 22px 17px 21px;
-    margin-right:0;
+@media screen and (max-width: 700px){
+  .aboutContainer p {
+    margin-top: 0;
+  }
+  .aboutBlock{
     margin-bottom: 10px;
   }
-}
-@media screen and (max-width: 515px){
+  .major{
+    padding: 10px 22px 0 21px;
+    margin-right:0;
+  }
+
   .aboutBlock_profile {
     width: 100%;
+    padding: 5px 54px 2px 25px;
+  }
+  .aboutBlock_profile p {
+    margin-top: 10px;
   }
   .aboutContainer_titleArea{
     padding:80px 0 50px 0;
@@ -447,12 +455,15 @@
   }
   .about-subTitle02{
     font-size: 16px;
+    margin: 0;
   }
   .aboutText{
     font-size: 16px;
   }
   .nameage{
     width: 100%;
+    padding: 10px 22px 0px 22px;
+    margin: 0 0 10px;
   }
   .major,
 	.about-sns,
@@ -460,10 +471,11 @@
     width: 100%;
   }
 	.about-sns {
-		margin-bottom: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
 	}
 	.sports {
-		padding: 0 22px;
+		padding: 10px 22px 0;
 	}
   .jo{
     display: none;
@@ -471,6 +483,7 @@
   .birthplace{
     width: 100%;
     margin-bottom: 10px;
+    padding: 10px 12px 0px 22px;
   }
   .position{
     width: 100%;
@@ -478,6 +491,7 @@
   }
   .hobby{
     width: 100%;
+    margin-bottom: 10px;
   }
   .aboutText02{
     width: 100%;
@@ -496,6 +510,12 @@
   }
   .aboutBlock02{
     margin-bottom:0;
+  }
+  .character {
+    padding: 10px 22px 0px 22px;
+  }
+  .purpose {
+    width: 100%;
   }
 }
 @media screen and (max-width: 425px){

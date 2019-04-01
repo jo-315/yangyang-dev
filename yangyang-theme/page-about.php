@@ -38,12 +38,12 @@ get_header('about');
             </p>
 
             <p class="aboutText nameDeco">
-              <span class="jocolor">じょー</span>&nbsp;<span>20</span><span class="font-12">th</span>
+              <span class="jocolor">じょー</span>&nbsp;<span>21</span><span class="font-12">th</span>
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jo.png" class="joicon lazyload"/>
             </p>
 
             <p class="aboutText nameDeco">
-              <span class="yancolor" >やんやん</span>&nbsp;<span>20</span><span class="font-12">th</span>
+              <span class="yancolor" >やんやん</span>&nbsp;<span>21</span><span class="font-12">th</span>
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/yanyan.png" class="yaicon lazyload"/>
             </p>
           </div>
@@ -138,12 +138,12 @@ get_header('about');
         </p>
 
         <p class="aboutText aboutText01 left">
-          <span class="jocolor">じょー</span><br />・Baseconnect.Inc エンジニア<br />・<a href="https://moire.xsrv.jp/" target="_blank">moire 社会貢献活動に繋ぐWebメディア</a> 代表<br />
-          ・阪大NICE代表 / west(関西NICE運営委員会)
+          <span class="jocolor">じょー</span><br/>・<a href="https://moire-org.com/" target="_blank">moire</a><br />
+          ・<a href="https://twitter.com/NICE65229930?lang=ja" target="_blank">関西NICE学生チーム・NEXY(ネクシー)</a> / west(関西NICE運営委員会)
         </p>
 
         <p class="aboutText left">
-          <span class="yancolor" >やんやん</span><br />・現役大学生<br />・webサイト制作会社でインターン
+          <span class="yancolor" >やんやん</span><br />・現役大学生/心理学専攻<br />・webサイト制作会社でインターン
         </p>
       </div>
     </div>
