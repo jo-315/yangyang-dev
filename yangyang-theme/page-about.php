@@ -157,7 +157,7 @@ get_header('about');
       </p>
 
       <p class="aboutText aboutText01 left">
-        <span class="jocolor">じょー</span><br />好きなタイプは戸田恵梨香。<br />自分のこと話すのが苦手なタイプのコミュ障。基本は個人主義だが、意外と甘えん坊。泣き顔に定評がある(らしい...)。
+        <span class="jocolor">じょー</span><br />好きなタイプは戸田恵梨香。<br />自分のこと話すのが苦手なタイプのコミュ障。最近頑張って克服中。実年齢より老けて見られがちだが意外と甘えん坊。泣き顔に定評がある(らしい...)。
       </p>
 
       <p class="aboutText left">
@@ -174,7 +174,7 @@ get_header('about');
       </p>
 
       <p class="aboutText aboutText01 aboutText02 left">
-        <span class="jocolor">じょー</span><br />趣味と仕事を分けない生き方をしたい。今はmoireとNICEでの活動が趣味と呼べるかもしれないし、ある意味仕事とも呼べるかもしれない。
+        <span class="jocolor">じょー</span><br />moireとNICEの活動が、いい意味で趣味と仕事の中間を彷徨っている。アニメ・漫画・読書をよく嗜む。生木木工のグリーンウッドワークも好き。
       </p>
 
       <p class="aboutText aboutText02 aboutText03 left">
@@ -192,7 +192,7 @@ get_header('about');
       </p>
 
       <p class="aboutText aboutText01 aboutText02 left">
-        <span class="jocolor">じょー</span><br />将来は核融合により、エネルギー問題にブレイクスルーをもたらしたい。その上で、ボランティアを始めとする、いわゆる社会貢献活動を活発にし、現状国・企業が手を伸ばせていない部分での改善を試みたい。
+        <span class="jocolor">じょー</span><br />『1.世界のエネルギー問題の解決に貢献する』<br>『2.社会貢献活動が身近にある社会を作る』<br>『3.自然保護活動を普及させる』<br>この三つの成し遂げたいことのために生きている。
       </p>
 
       <p class="aboutText aboutText02 aboutText03 left">

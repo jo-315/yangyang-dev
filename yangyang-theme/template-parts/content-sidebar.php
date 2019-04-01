@@ -145,6 +145,12 @@
 			</a>
 		</div>
 
+		<div class="sidebar-content sidebar_ad_wrap">
+			<a href="/tag/ハワイ/" class="sidebar-img-link">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hawai.png" alt="" />
+			</a>
+		</div>
+
 		<div class="sidebar_ad_wrap">
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- サイドバー下部 -->
