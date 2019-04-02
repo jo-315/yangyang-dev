@@ -1,6 +1,17 @@
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
+  <!--
+    やんやんへ
+
+		いつもありがとう。苦しい時、辛い時、やんやんの存在があるから僕は頑張れています。
+		やんやんはいつでも、僕の支えであり、僕の癒しであり、そして何よりも大切な存在です。
+		そんなやんやんを、今までもこれからも愛してます。
+
+		見えないところから愛を込めて
+
+		by じょー　Apr,2,2019
+	-->
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
