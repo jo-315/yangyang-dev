@@ -2028,3 +2028,168 @@ singleの関連記事と共通
 .article-wrap-book:hover .article-thumbnail {
 	background: #a6d1ba;
 }
+
+/*カエレバ・ヨメレバ*/
+.kaerebalink-box, .booklink-box {
+	border: 2px solid #e29696;
+	padding: 20px 20px 0;
+	width: 90%;
+	max-width:680px;
+	margin:0 auto;
+	box-shadow: 0px 0px 4px -2px;
+}
+.kaerebalink-image, .booklink-image {
+	width:20%;
+	float: left;
+}
+.kaerebalink-image a img,.booklink-image a img {
+	width:100%;
+}
+.kaerebalink-info, .booklink-info {
+	width:70%;
+	margin-left: 2em;
+	float: left;
+}
+.kaerebalink-name > a, .booklink-name > a {
+	font-size: 18px;
+	color: #256CC5;
+	text-decoration: underline;
+}
+.kaerebalink-powered-date, .booklink-powered-date {
+	font-size: 12px;
+}
+.kaerebalink-powered-date a, .booklink-powered-date a {
+	color: #256CC5;
+	text-decoration: underline;
+}
+.kaerebalink-link1, .booklink-link2 {
+	margin-top: 1em;
+}
+.kaerebalink-link1 div, .booklink-link2 div {
+	margin-right: 5px;
+	margin-bottom:3px;
+	text-align: center;
+	float:left;
+	width: 30%;
+}
+.kaerebalink-link1 div:active, .booklink-link2 div:active {
+	border-top:3px solid #FFFFFF;
+	margin-bottom: none;
+	box-shadow:none;
+}
+.kaerebalink-link1 div a, .booklink-link2 div a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	display:block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+.shoplinkamazon {
+	background: #FF9900;
+	box-shadow: 0 0 4px -1px #B16A00;
+}
+.shoplinkamazon:hover {
+	background: #FFB23F;
+}
+.shoplinkkindle {
+	background: #0079BA;
+	box-shadow: 0 3px #015684;
+}
+.shoplinkkindle:hover {
+	background: #2797D4;
+}
+.shoplinkrakuten {
+	background: #BF0000;
+	box-shadow: 0 3px #7B0101;
+}
+.shoplinkrakuten:hover {
+	background: #DC3939;
+}
+.shoplinkkakakucom {
+	background: #25388E;
+	box-shadow: 0 3px #081658;
+}
+.shoplinkkakakucom:hover {
+	background: #485CB7;
+}
+.shoplinkyahoo {
+	background: #750992;
+	box-shadow: 0 3px #3F0250;
+}
+.shoplinkyahoo:hover {
+	background: #8F0FB3;
+}
+.booklink-footer {
+	height:0;
+	clear: left;
+}
+
+@media screen and (max-width: 599px) {
+	.kaerebalink-box, .booklink-box {
+		padding: 20px;
+		width: 100%;
+		margin:0 auto;
+	}
+	.kaerebalink-image, .booklink-image {
+		margin:0 auto;
+		text-align:center;
+		width: 90%;
+		float: none;
+	}
+	.kaerebalink-info, .booklink-info {
+		width: 100%;
+		margin:10px auto;
+		padding-top:10px;
+		border-top:1px solid #CCCCCC;
+	}
+	.kaerebalink-name > a, .booklink-name > a {
+		font-size: 16px;
+		color: #256CC5;
+		text-decoration: underline;
+	}
+	.kaerebalink-powered-date, .booklink-powered-date {
+		font-size: 12px;
+	}
+	.kaerebalink-powered-date a, .booklink-powered-date a {
+		color: #256CC5;
+		text-decoration: underline;
+	}
+	.kaerebalink-link1, .booklink-link2 {
+		margin-top: 1em;
+	}
+	.kaerebalink-link1 div, .booklink-link2 div {
+		margin:5px auto;
+		text-align: center;
+		width: 100%;
+	}
+	.kaerebalink-link1 div a, .booklink-link2 div a {
+		color: #FFFFFF;
+		text-decoration: none;
+		font-weight: bold;
+		display:block;
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+	}
+	.shoplinkamazon {
+		background: #FF9900;
+	}
+	.shoplinkkindle {
+		background: #0079BA;
+	}
+	.shoplinkrakuten {
+		background: #BF0000;
+	}
+	.shoplinkkakakucom {
+		background: #25388E;
+	}
+	.shoplinkyahoo {
+		background: #750992;
+	}
+	.booklink-footer {
+		height:0;
+		clear: left;
+	}
+}
