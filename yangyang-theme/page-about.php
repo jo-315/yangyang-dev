@@ -8,7 +8,7 @@ get_header('about');
       <p>
         やんやんとやんやんって？
       </p>
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_01.png" class="lazyload" alt="やんやんとやんやん"/>
+      <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_01.png" class="lazyload" alt="やんやんとやんやん"/>
     </div>
 
     <div class="aboutContainer_textArea">
@@ -39,12 +39,12 @@ get_header('about');
 
             <p class="aboutText nameDeco">
               <span class="jocolor">じょー</span>&nbsp;<span>21</span><span class="font-12">th</span>
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/jo.png" class="joicon lazyload"/>
+              <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/jo.png" class="joicon lazyload"/>
             </p>
 
             <p class="aboutText nameDeco">
               <span class="yancolor" >やんやん</span>&nbsp;<span>21</span><span class="font-12">th</span>
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/yanyan.png" class="yaicon lazyload"/>
+              <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/yanyan.png" class="yaicon lazyload"/>
             </p>
           </div>
 
@@ -78,9 +78,9 @@ get_header('about');
               class="sns-social-wrap profile-sns-social-wrap"
             >
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
+                data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
                 alt="Twitter"
-                class="profile-sns-social-icon"
+                class="profile-sns-social-icon lazyload"
               />
             </a>
           </p>
@@ -93,9 +93,9 @@ get_header('about');
               class="sns-social-wrap profile-sns-social-wrap"
             >
               <img
-                src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
+                data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
                 alt="Twitter"
-                class="profile-sns-social-icon"
+                class="profile-sns-social-icon lazyload"
               />
             </a>
           </p>
@@ -134,7 +134,7 @@ get_header('about');
       <div class="position aboutSp">
         <p class="aboutTitle aboutTitle01">
           経歴<span class="about-subTitle02 pink">position</span>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_02.png" class="positionIcon lazyload"/>
+          <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_02.png" class="positionIcon lazyload"/>
         </p>
 
         <p class="aboutText aboutText01 left">
@@ -183,7 +183,7 @@ get_header('about');
     </div>
 
     <div class="jo">
-      <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_06.png" class="hoverIcon lazyload"/>
+      <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/index_06.png" class="hoverIcon lazyload"/>
     </div>
 
     <div class="purpose aboutSp">

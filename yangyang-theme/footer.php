@@ -4,8 +4,8 @@
 		<div class="footer-content">
 			<div class="footer-img01-wrap">
 				<img
-					src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer01.png"
-					class="footer-img01"
+					data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/footer01.png"
+					class="footer-img01 lazyload"
 				/>
 
 				<div class="footer-img01--comment">

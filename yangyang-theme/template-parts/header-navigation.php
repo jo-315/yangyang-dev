@@ -5,8 +5,8 @@
   <div class="header-logo-wrap">
     <a href="/">
       <img
-        src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-jo.png"
-        class="header-logo"
+        data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/header-jo.png"
+        class="header-logo lazyload"
       >
     </a>
   </div>

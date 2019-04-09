@@ -32,8 +32,8 @@
 				<div class="header-content--img">
 					<div class="header-content--img-01-wrap">
 						<img
-							src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang01.png"
-							class="header-content--img-01"
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang01.png"
+							class="header-content--img-01 lazyload"
 						/>
 					</div>
 					<div class="header-content--img-desc">
@@ -43,8 +43,8 @@
 					</div>
 					<div class="header-content--img-02-wrap">
 						<img
-							src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang02.png"
-							class="header-content--img-02"
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/yangyang02.png"
+							class="header-content--img-02 lazyload"
 						/>
 					</div>
 				</div>

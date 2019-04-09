@@ -14,7 +14,7 @@ get_header('portfolio');
 <div class="portfolio_header">
   <h1><?php echo $keyword ? $keyword : $class; ?></h1>
   <p>portfolio</p>
-  <img src='<?php echo get_stylesheet_directory_uri(); ?>/img/index_05.png' />
+  <img data-src='<?php echo get_stylesheet_directory_uri(); ?>/img/index_05.png' class="lazyload" />
 </div>
 
 <div class="portfolio_content">

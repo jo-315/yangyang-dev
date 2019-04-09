@@ -19,8 +19,8 @@ get_header();
 					</div>
 					<div class="site-main-title--img-wrap">
 						<img
-							src="<?php echo get_stylesheet_directory_uri(); ?>/img/index-article-title.png"
-							class="site-main-title--img"
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/index-article-title.png"
+							class="site-main-title--img lazyload"
 						/>
 					</div>
 				</div>

@@ -141,13 +141,13 @@
 
 		<div class="sidebar-content sidebar_ad_wrap">
 			<a href="/tag/ノルウェー/" class="sidebar-img-link">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/norway.png" alt="" />
+        <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/norway.png" alt="" class="lazyload" />
 			</a>
 		</div>
 
 		<div class="sidebar-content sidebar_ad_wrap">
 			<a href="/tag/ハワイ/" class="sidebar-img-link">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hawai.png" alt="" />
+        <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/hawai.png" alt="" class="lazyload" />
 			</a>
 		</div>
 

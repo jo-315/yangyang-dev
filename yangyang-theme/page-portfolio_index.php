@@ -5,7 +5,7 @@ get_header('portfolio');
 <div class="portfolio_header">
   <h1>ポートフォリオ</h1>
   <p>portfolio</p>
-  <img src='<?php echo get_stylesheet_directory_uri(); ?>/img/index_05.png' />
+  <img data-src='<?php echo get_stylesheet_directory_uri(); ?>/img/index_05.png' class="lazyload" />
 </div>
 
 <div class="portfolio">
@@ -60,19 +60,19 @@ get_header('portfolio');
               switch($index) {
                 case 0:
                   echo '<div class="portfolio_index_main_img">';
-                  echo "<img src='$image->guid' />";
+                  echo "<img data-src='$image->guid'  class='lazyload' />";
                   echo '</div>';
                   break;
                 case 1:
                   echo '<div class="portfolio_index_sub_imgs_wrap">';
-                  echo "<img src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index' />";
+                  echo "<img data-src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index lazyload' />";
                   break;
                 case 4:
-                  echo "<img src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index' />";
+                  echo "<img data-src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index lazyload' />";
                   echo '</div>';
                   break;
                 default:
-                  echo "<img src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index' />";
+                  echo "<img data-src='$image->guid' class='portfolio_index_sub_img portfolio_index_sub_img__$index lazyload' />";
                   break;
               }
               $index++;
