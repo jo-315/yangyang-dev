@@ -22,7 +22,7 @@
 					</a>
 				</li>
 				<li>
-          <a href="/portfolio">
+          <a href="/portfolio_index">
             PORTFOLIO
           </a>
         </li>

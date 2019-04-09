@@ -86,3 +86,7 @@ jQuery(function($) {
 			mouseout: timerStart
 	});
 });
+
+jQuery(function($) {
+	$('.portfolio_modal').modaal();
+});

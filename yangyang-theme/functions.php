@@ -123,8 +123,8 @@ function yangyang_theme_scripts() {
 
 	if (is_single()) {
 		wp_enqueue_style( 'yangyang-theme-style_single', get_template_directory_uri() . '/css/single.css' );
-	} elseif (is_page()) {
-		wp_enqueue_style( 'yangyang-theme-style_portfolio', get_template_directory_uri() . '/css/portfolio.css' );
+	} elseif (is_page()){
+		wp_enqueue_script( 'yangyang-theme-style_modaal', get_template_directory_uri() . '/js/modaal.min.js', array('jquery') );
 	} else {
 		wp_enqueue_style( 'yangyang-theme-style_archive', get_template_directory_uri() . '/css/archive.css' );
 	}
@@ -394,4 +394,166 @@ function add_defer_to_enqueue_script( $url ) {
     return "$url' defer charset='UTF-8";
 }
 add_filter( 'clean_url', 'add_defer_to_enqueue_script', 11, 1 );
+}
+
+// ［メディアを挿入/編集］にメタフィールドを追加
+// クラス
+function my_add_attachment_class_field( $form_fields, $post ) {
+	$field_value = get_post_meta( $post->ID, 'class', true );
+	$form_fields['class'] = array(
+			'value' => $field_value ? $field_value : '',
+			'label' => __( 'class' ),
+			'helps' => __( 'Trip, Daily, Art...' )
+	);
+	return $form_fields;
+}
+add_filter( 'attachment_fields_to_edit', 'my_add_attachment_class_field', 10, 2 );
+
+function my_save_attachment_class( $attachment_id ) {
+	if ( isset( $_REQUEST['attachments'][$attachment_id]['class'] ) ) {
+			$class = $_REQUEST['attachments'][$attachment_id]['class'];
+			update_post_meta( $attachment_id, 'class', $class );
+	}
+}
+add_action( 'edit_attachment', 'my_save_attachment_class' );
+
+// キーワード
+function my_add_attachment_keyword_field( $form_fields, $post ) {
+	$field_value = get_post_meta( $post->ID, 'keyword', true );
+	$form_fields['keyword'] = array(
+			'value' => $field_value ? $field_value : '',
+			'label' => __( 'keyword' ),
+			'helps' => __( 'Norway, Hawaii...' )
+	);
+	return $form_fields;
+}
+add_filter( 'attachment_fields_to_edit', 'my_add_attachment_keyword_field', 10, 2 );
+
+function my_save_attachment_keyword( $attachment_id ) {
+	if ( isset( $_REQUEST['attachments'][$attachment_id]['keyword'] ) ) {
+			$keyword = $_REQUEST['attachments'][$attachment_id]['keyword'];
+			update_post_meta( $attachment_id, 'keyword', $keyword );
+	}
+}
+add_action( 'edit_attachment', 'my_save_attachment_keyword' );
+
+// ユーザー
+function my_add_attachment_author_field( $form_fields, $post ) {
+	$field_value = get_post_meta( $post->ID, 'author', true );
+	$form_fields['author'] = array(
+			'value' => $field_value ? $field_value : '',
+			'label' => __( 'author' ),
+			'helps' => __( 'jo or yanyan' )
+	);
+	return $form_fields;
+}
+add_filter( 'attachment_fields_to_edit', 'my_add_attachment_author_field', 10, 2 );
+
+function my_save_attachment_author( $attachment_id ) {
+	if ( isset( $_REQUEST['attachments'][$attachment_id]['author'] ) ) {
+			$author = $_REQUEST['attachments'][$attachment_id]['author'];
+			update_post_meta( $attachment_id, 'author', $author );
+	}
+}
+add_action( 'edit_attachment', 'my_save_attachment_author' );
+
+// url
+function my_add_attachment_relation_field( $form_fields, $post ) {
+	$field_value = get_post_meta( $post->ID, 'relation', true );
+	$form_fields['relation'] = array(
+			'value' => $field_value ? $field_value : '',
+			'label' => __( 'relation' ),
+			'helps' => __( '画像を載せている記事のurl' )
+	);
+	return $form_fields;
+}
+add_filter( 'attachment_fields_to_edit', 'my_add_attachment_relation_field', 10, 2 );
+
+function my_save_attachment_relation( $attachment_id ) {
+	if ( isset( $_REQUEST['attachments'][$attachment_id]['relation'] ) ) {
+			$relation = $_REQUEST['attachments'][$attachment_id]['relation'];
+			update_post_meta( $attachment_id, 'relation', $relation );
+	}
+}
+add_action( 'edit_attachment', 'my_save_attachment_relation' );
+
+// url先の記事名
+function my_add_attachment_article_field( $form_fields, $post ) {
+	$field_value = get_post_meta( $post->ID, 'article', true );
+	$form_fields['article'] = array(
+			'value' => $field_value ? $field_value : '',
+			'label' => __( 'article' ),
+			'helps' => __( '画像を載せている記事のurl先の記事名' )
+	);
+	return $form_fields;
+}
+add_filter( 'attachment_fields_to_edit', 'my_add_attachment_article_field', 10, 2 );
+
+function my_save_attachment_article( $attachment_id ) {
+	if ( isset( $_REQUEST['attachments'][$attachment_id]['article'] ) ) {
+			$article = $_REQUEST['attachments'][$attachment_id]['article'];
+			update_post_meta( $attachment_id, 'article', $article );
+	}
+}
+add_action( 'edit_attachment', 'my_save_attachment_article' );
+
+/**
+* ページネーション出力関数
+* $paged : 現在のページ
+* $pages : 全ページ数
+* $range : 左右に何ページ表示するか
+* $show_only : 1ページしかない時に表示するかどうか
+*/
+function pagination( $pages, $paged, $range = 2, $show_only = false ) {
+
+	$pages = ( int ) $pages;    //float型で渡ってくるので明示的に int型 へ
+	$paged = $paged ?: 1;       //get_query_var('paged')をそのまま投げても大丈夫なように
+
+	//表示テキスト
+	$text_first   = "« 最初へ";
+	$text_before  = "‹ 前へ";
+	$text_next    = "次へ ›";
+	$text_last    = "最後へ »";
+
+	if ( $show_only && $pages === 1 ) {
+			// １ページのみで表示設定が true の時
+			echo '<div class="pagination"><span class="current pager">1</span></div>';
+			return;
+	}
+
+	if ( $pages === 1 ) return;    // １ページのみで表示設定もない場合
+
+	if ( 1 !== $pages ) {
+			//２ページ以上の時
+			echo '<div class="pagination"><span class="page_num">Page ', $paged ,' of ', $pages ,'</span>';
+			if ( $paged > $range + 1 ) {
+					// 「最初へ」 の表示
+					echo '<a href="', get_pagenum_link(1) ,'" class="first">', $text_first ,'</a>';
+			}
+			if ( $paged > 1 ) {
+					// 「前へ」 の表示
+					echo '<a href="', get_pagenum_link( $paged - 1 ) ,'" class="prev">', $text_before ,'</a>';
+			}
+			for ( $i = 1; $i <= $pages; $i++ ) {
+
+					if ( $i <= $paged + $range && $i >= $paged - $range ) {
+							// $paged +- $range 以内であればページ番号を出力
+							if ( $paged === $i ) {
+									echo '<span class="current pager">', $i ,'</span>';
+							} else {
+									echo '<a href="', get_pagenum_link( $i ) ,'" class="pager">', $i ,'</a>';
+							}
+					}
+
+			}
+			if ( $paged < $pages ) {
+					// 「次へ」 の表示
+					echo '<a href="', get_pagenum_link( $paged + 1 ) ,'" class="next">', $text_next ,'</a>';
+			}
+			if ( $paged + $range < $pages ) {
+					// 「最後へ」 の表示
+					echo '<a href="', get_pagenum_link( $pages ) ,'" class="last">', $text_last ,'</a>';
+			}
+			echo '</div>';
+	}
 }
