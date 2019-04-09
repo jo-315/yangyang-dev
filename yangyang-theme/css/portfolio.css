@@ -147,17 +147,18 @@
 
 .portfolio_modal_contents {
   display: inline-block;
-  font-size: 15px;
+  font-size: 0;
   vertical-align: top;
-  font-size: 14px;
   position: relative;
   width: 100%;
 }
 
-.portfolio_modal_contents a {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.portfolio_modal_link {
+  vertical-align: bottom;
+  text-align: right;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 3px;
 }
 
 .portfolio_modal_desc {
@@ -166,7 +167,9 @@
   font-family: 'HiraKakuProN-W6';
   padding-bottom: 5px;
   vertical-align: top;
-  margin: 10px 30px;
+  margin: 10px 0 0 15px;
+  width: calc(100% - 50px - 15px);
+  font-size: 14px;
 }
 
 .portfolio_modal_author_img_wrap {
@@ -329,5 +332,27 @@
   .portfolio_index_sub_img__1,
   .portfolio_index_sub_img__2 {
     display: none;
+  }
+
+  .modaal-wrapper {
+    margin-top: 70px !important;
+  }
+
+  .modaal-inner-wrapper {
+    padding: 0 0 100px !important;
+    vertical-align: top !important;
+  }
+
+  .modaal-content-container {
+    padding: 3px !important;
+  }
+
+  .portfolio_modal_keyword {
+    top: -5px;
+    left: 3px;
+  }
+
+  .portfolio_modal_main_img {
+    height: 500px;
   }
 }

@@ -36,7 +36,9 @@
     </div>
 
     <?php if($URL !== '') { ?>
-      <a href=<?php echo $URL ?>><?php echo $article ?></a>
+      <div class="portfolio_modal_link">
+        <a href=<?php echo $URL ?>><?php echo $article ?></a>
+      </div>
     <?php } ?>
 
   </div>
