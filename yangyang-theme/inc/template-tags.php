@@ -136,25 +136,31 @@ if ( ! function_exists( 'yangyang_theme_post_thumbnail' ) ) :
 			?>
 
 			<div class="article-thumbnail">
-				<?php the_post_thumbnail('post-thumbnail', array(
-					'class' => 'lazyload'
-				)); ?>
+				<?php echo get_thumb_img(); ?>
 			</div>
 
 		<?php else : ?>
 
       <div class="index-article-thumbnail article-thumbnail">
-				<?php
-				the_post_thumbnail( 'post-thumbnail', array(
-					'alt' => the_title_attribute( array(
-						'echo' => false,
-					) ),
-					'class' => 'lazyload'
-				) );
-				?>
+				<?php echo get_thumb_img(); ?>
 			</div>
 
 		<?php
 		endif; // End is_singular().
+	}
+endif;
+
+if ( ! function_exists( 'get_thumb_img' ) ) :
+	function get_thumb_img($size = 'full') {
+
+		$thumb_id = get_post_thumbnail_id();                         // アイキャッチ画像のIDを取得
+
+		$thumb_img = wp_get_attachment_image_src($thumb_id, $size);  // $sizeサイズの画像内容を取得
+
+		$thumb_src = $thumb_img[0];    // 画像のurlだけ取得
+
+		$thumb_alt = get_the_title();  //alt属性に入れるもの（記事のタイトルにしています）
+
+		return '<img data-src="'.$thumb_src.'" alt="'.$thumb_alt.'" class="lazyload">';
 	}
 endif;
