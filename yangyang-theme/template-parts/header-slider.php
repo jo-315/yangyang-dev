@@ -11,7 +11,7 @@
 
       <article <?php post_class( 'slidekiji' ); ?>>
         <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail('large'); ?>
+          <?php echo get_thumb_img('large'); ?>
           <div class="text">
             <span class="kiji-date">
               <time
