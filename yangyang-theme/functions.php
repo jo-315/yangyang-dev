@@ -403,7 +403,7 @@ function my_add_attachment_class_field( $form_fields, $post ) {
 	$form_fields['class'] = array(
 			'value' => $field_value ? $field_value : '',
 			'label' => __( 'class' ),
-			'helps' => __( 'Trip, Daily, Art...' )
+			'helps' => __( 'Trip, Daily, Food' )
 	);
 	return $form_fields;
 }
@@ -423,7 +423,7 @@ function my_add_attachment_keyword_field( $form_fields, $post ) {
 	$form_fields['keyword'] = array(
 			'value' => $field_value ? $field_value : '',
 			'label' => __( 'keyword' ),
-			'helps' => __( 'Norway, Hawaii...' )
+			'helps' => __( 'Norway, Hawaii' )
 	);
 	return $form_fields;
 }

@@ -15,7 +15,8 @@ get_header('portfolio');
       array('class' => 'Daily', 'keyword' => ''),
       array('class' => 'Trip',  'keyword' => ''),
       array('class' => 'Trip',  'keyword' => 'Norway'),
-      array('class' => 'Trip',  'keyword' => 'Hawaii')
+      array('class' => 'Trip',  'keyword' => 'Hawaii'),
+      array('class' => 'Food',  'keyword' => '')
     );
 
     foreach($categories as $category) {
