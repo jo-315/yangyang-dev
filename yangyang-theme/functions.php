@@ -123,8 +123,9 @@ function yangyang_theme_scripts() {
 
 	if (is_single()) {
 		wp_enqueue_style( 'yangyang-theme-style_single', get_template_directory_uri() . '/css/single.css' );
+		wp_enqueue_script( 'yangyang-theme-processing', get_template_directory_uri() . '/js/processing.min.js');
 	} elseif (is_page()){
-		wp_enqueue_script( 'yangyang-theme-style_modaal', get_template_directory_uri() . '/js/modaal.min.js', array('jquery') );
+		wp_enqueue_script( 'yangyang-theme-modaal', get_template_directory_uri() . '/js/modaal.min.js', array('jquery') );
 	} else {
 		wp_enqueue_style( 'yangyang-theme-style_archive', get_template_directory_uri() . '/css/archive.css' );
 	}
