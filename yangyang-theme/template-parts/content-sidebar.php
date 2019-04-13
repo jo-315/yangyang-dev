@@ -54,7 +54,7 @@
 				</div>
 				<div class="sidebar_manegar_content">
 					<p>やんやん</p>
-					<p>心理学勉強中の大学3回生。</p>
+					<p>心理学を勉強中の大学3回生。二重は諦めてスキンケアに夢中。</p>
 				</div>
 				<div class="sidebar_manegar_sns">
 					<img
