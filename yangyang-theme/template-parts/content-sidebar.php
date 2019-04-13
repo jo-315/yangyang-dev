@@ -100,6 +100,20 @@
 			</li>
 
 			<?php }} ?>
+
+			<li class="sidebar_tag">
+				<a href="/portfolio_index"></a>
+				<div class="sidebar_tag_img">
+					<img
+					  data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/portfolio.png"
+						class="lazyload"
+					/>
+				</div>
+				<div class="sidebar_tag_title">
+					ポートフォリオ
+				</div>
+			</li>
+
 		</ul>
 	</div>
 
