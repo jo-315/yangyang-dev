@@ -5,13 +5,102 @@
 		<!-- リンク広告01 -->
 		<ins class="adsbygoogle"
 				style="display:block"
-				data-ad-client="ca-pub-2828170763777117"
+		  	data-ad-client="ca-pub-2828170763777117"
 				data-ad-slot="2150476266"
 				data-ad-format="link"
 				data-full-width-responsive="true"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
+	</div>
+
+	<!-- 管理者 -->
+	<div class="sidebar-content recommend-article">
+		<div class="sidebar-title">
+			管理者
+		</div>
+		<ul>
+			<li class="sidebar_manegar">
+				<div class="sidebar_manegar_img">
+					<img
+					  data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/jo.png"
+						class="joicon lazyload"
+					/>
+				</div>
+				<div class="sidebar_manegar_content">
+					<p>じょー</p>
+					<p>エネルギーを勉強中の大学4回生。工学部男子だけどエモさも身につけたい。</p>
+				</div>
+				<div class="sidebar_manegar_sns">
+					<img
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
+							alt="Twitter"
+							class="lazyload"
+						/>
+					<a
+						href="https://twitter.com/VYZ3pDOkmPiwXtf?lang=ja"
+						target="_blank"
+					></a>
+					<p>Twitter</p>
+				</div>
+			</li>
+
+			<li class="sidebar_manegar">
+				<div class="sidebar_manegar_img">
+					<img
+					  data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/yanyan.png"
+						class="joicon lazyload"
+					/>
+				</div>
+				<div class="sidebar_manegar_content">
+					<p>やんやん</p>
+					<p>心理学勉強中の大学3回生。</p>
+				</div>
+				<div class="sidebar_manegar_sns">
+					<img
+							data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/Twitter_Social_Icon_Rounded_Square_Color.png"
+							alt="Twitter"
+							class="lazyload"
+						/>
+					<a
+						href="https://twitter.com/b3OJjuMQqAvlmO7?lang=ja"
+						target="_blank"
+					></a>
+					<p>Twitter</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<!-- tag -->
+	<div class="sidebar-content">
+		<ul class="sidebar_tag_wrap">
+			<?php
+				$args = array(
+					'orderby' => 'name',
+					'order' => 'ASC'
+				);
+				$posttags = get_tags($args);
+
+				if ( $posttags ){
+					foreach( $posttags as $tag ) {
+			?>
+
+			<li class="sidebar_tag">
+				<a href="<?php echo get_tag_link( $tag->term_id )?>"></a>
+				<div class="sidebar_tag_img">
+					<img
+					  data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/<?php echo $tag->slug?>.png"
+						class="lazyload"
+					/>
+				</div>
+				<div class="sidebar_tag_title">
+					<?php echo $tag->name?>（<?php echo $tag->count?>）
+				</div>
+			</li>
+
+			<?php }} ?>
+		</ul>
 	</div>
 
 	<!-- 人気記事 -->
@@ -140,14 +229,14 @@
 		</div>
 
 		<div class="sidebar-content sidebar_ad_wrap">
-			<a href="/tag/ノルウェー/" class="sidebar-img-link">
+			<a href="/tag/norway/" class="sidebar-img-link">
         <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/norway.png" alt="" class="lazyload" />
 			</a>
 		</div>
 
 		<div class="sidebar-content sidebar_ad_wrap">
-			<a href="/tag/ハワイ/" class="sidebar-img-link">
-        <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/hawai.png" alt="" class="lazyload" />
+			<a href="/tag/hawaii/" class="sidebar-img-link">
+        <img data-src="<?php echo get_stylesheet_directory_uri(); ?>/img/hawaii.png" alt="" class="lazyload" />
 			</a>
 		</div>
 
