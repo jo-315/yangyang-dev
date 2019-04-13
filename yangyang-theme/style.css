@@ -1643,6 +1643,12 @@ a:hover, a:active {
 	font-family: smartUI;
 }
 
+@media screen and (max-width: 450px) {
+	.sidebar_tag_title {
+		font-size: 15px;
+	}
+}
+
 /*
 rank
  */
