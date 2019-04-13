@@ -42,12 +42,12 @@
             </li>
             <li>
               <a href="/category/skill/">
-                Web Skill
+                PC Skill
               </a>
             </li>
             <li>
-              <a href="/category/thought/">
-                Thought
+              <a href="/category/art/">
+                ART
               </a>
             </li>
             <li>
