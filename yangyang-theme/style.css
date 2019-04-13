@@ -2119,16 +2119,16 @@ singleの関連記事と共通
 }
 
 .article-wrap-academic:hover .article-link,
-.article-wrap-thought:hover .article-link,
+.article-wrap-art:hover .article-link,
 .article-wrap-book:hover .article-link {
 	color: #a6d1ba;
 }
 
 .article-category-academic,
-.article-category-thought,
+.article-category-art,
 .article-category-book,
 .article-wrap-academic:hover .article-thumbnail,
-.article-wrap-thought:hover .article-thumbnail,
+.article-wrap-art:hover .article-thumbnail,
 .article-wrap-book:hover .article-thumbnail {
 	background: #a6d1ba;
 }
