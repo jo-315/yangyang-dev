@@ -1712,7 +1712,7 @@ rank
 .sidebar-img img{
 	object-fit: cover;
 	height: 110px;
-  width: 140px;
+  width: 140px !important;
 }
 
 .article-wrap:hover .sidebar-img img {
@@ -2057,6 +2057,7 @@ singleの関連記事と共通
 .article-thumbnail img {
  	object-fit: cover;
 	height: 100%;
+	width: 100%;
 }
 
 @media screen and (max-width: 1192px) {
