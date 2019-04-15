@@ -62,6 +62,10 @@
 	font-weight: bold;
 }
 
+.pink-marker {
+	background:linear-gradient(transparent 50%, #f0c8ce 50%);
+}
+
 .font-12 {
 	font-size: 12px;
 }
